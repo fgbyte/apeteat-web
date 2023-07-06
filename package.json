@@ -1,0 +1,13 @@
+{
+  "name": "apeteat-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./css/main.css --watch",
+    "build": "tailwindcss -i ./input.css -o .css/main.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
