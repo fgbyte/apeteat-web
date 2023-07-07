@@ -109,7 +109,8 @@
 
 
     <!-- Botones -->
-    <div class="mt-16 flex justify-center items-center max-w-[120rem] mx-auto"><button
+    <div class="mt-20 flex justify-center items-center max-w-[120rem] mx-auto">
+      <button
       class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
       >
       Button
@@ -120,6 +121,63 @@
 
 
     <!-- Formularios -->
+    <div class="my-16 flex justify-center items-center max-w-[120rem] mx-auto px-2">
+      <form class="flex flex-col gap-3 mx-auto w-[42rem] rounded-lg p-8 bg-black bg-opacity-40 text-white">
+    
+        <div class="flex flex-col gap-2" id="numero-de-trabajadores">
+          <label class="font-bold">Número de trabajadores</label>
+          <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
+            <label class="flex gap-2 items-center">
+              <input type="radio" name="num-trabajadores" value="menos-de-10">
+              <span>menos de 10</span>
+            </label>
+            <label class="flex gap-2 items-center">
+              <input type="radio" name="num-trabajadores" value="10-a-50">
+              <span>10 a 50</span>
+            </label>
+            <label class="flex gap-2 items-center">
+              <input type="radio" name="num-trabajadores" value="mas-de-50">
+              <span>más de 50</span>
+            </label>
+          </div>
+        </div>
+    
+        <div class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-11 [&>label>input]:rounded-md">
+          <label class="w-full font-bold" for="">Persona de Contacto
+          <input type="text" >
+        </label>
+        <label class="w-full font-bold" for="">Nombre Empresa
+          <input type="text" >
+        </label>
+        </div>
+    
+        <div class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-11 [&>label>input]:rounded-md">
+          <label class="w-full font-bold" for="">E-mail
+          <input type="email" >
+        </label>
+        <label class="w-full font-bold" for="">Teléfono
+          <input type="text">
+        </label>
+        </div>
+    
+        <div class="flex flex-col">
+          <label class="">Consulta</label>
+          <textarea class="h-32 rounded-md px-2 text-black"></textarea>
+        </div>
+    
+        <div class="flex items-center gap-2">
+          <input id="políticas de privacidad" type="checkbox">
+          <label for="políticas de privacidad">Acepto las políticas de privacidad</label>
+        </div>
+    
+        <button
+      class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+      >
+      Enviar
+      </button>
+    
+      </form>
+    </div>
     <!-- / Formularios -->
 
 
