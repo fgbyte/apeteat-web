@@ -1,0 +1,39 @@
+<svg width="99" height="89" viewBox="0 0 99 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_pay" clip-path="url(#clip0_6_3568)">
+<g id="Home">
+<g id="Como-funciona">
+<g id="Group">
+<g id="Icono-pago">
+<g id="Group-3">
+<g id="Mask group">
+<mask id="mask0_6_3568" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="2" width="47" height="34">
+<g id="Group_2">
+<path id="Vector" d="M0 2.56152H46.9188V35.7233H0V2.56152Z" fill="#F3F5F6"/>
+</g>
+</mask>
+<g mask="url(#mask0_6_3568)">
+<path id="Fill-1" fill-rule="evenodd" clip-rule="evenodd" d="M46.9189 9.54915L46.5037 4.39148C46.5037 4.39148 46.3874 2.5213 44.8568 2.56218C43.7016 2.59363 1.51041 5.48906 1.51041 5.48906C1.51041 5.48906 -0.262277 5.618 0.0322973 8.3373C0.328968 11.064 1.44122 34.9045 2.42453 35.6677C3.14682 36.2275 34.7973 32.375 34.7973 32.375L35.8544 25.5141L38.4691 23.4441L42.3023 25.5141L50.3203 31.378L46.9189 9.54915Z" fill="#F3F5F6"/>
+</g>
+</g>
+</g>
+<path id="Stroke-4" d="M60.9778 41.7508C60.9778 41.7508 41.9605 22.7995 37.9329 23.461C35.2681 23.8982 32.8119 28.5809 39.2129 36.4453C45.6149 44.3108 57.1368 57.2972 61.3437 61.1372C65.5505 64.9781 68.6598 61.5041 71.2208 66.8074C73.7808 72.1119 82.5603 87.4748 82.5603 87.4748" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-6" d="M45.8101 6.61094C41.6515 2.03613 37.8042 -0.758656 35.2589 2.25418C34.6404 2.9859 35.0744 4.90639 36.0252 7.30073" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-8" d="M97.9236 79.4272C97.9236 79.4272 66.5341 30.5929 58.9087 22.7285C56.3718 20.112 54.2501 17.2847 51.3347 13.6208" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-10" d="M51.3341 13.6204L50.919 8.46277C50.919 8.46277 50.8026 6.59259 49.2721 6.63347C48.1158 6.66387 5.92569 9.56035 5.92569 9.56035C5.92569 9.56035 4.15301 9.68929 4.44758 12.4086C4.74425 15.1352 5.8565 38.9758 6.83982 39.7379C7.5621 40.2988 39.2126 36.4452 39.2126 36.4452" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-12" d="M52.9323 33.4401L51.3347 13.6208" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-14" d="M34.8336 36.9033C34.8336 36.9033 34.6397 41.1102 43.6016 48.3341C43.6016 48.3341 46.6197 50.8961 49.0895 49.3404" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-16" d="M38.8466 44.8599C38.8466 44.8599 37.0183 48.334 41.4076 51.9013C45.7969 55.4677 49.8171 57.8106 52.4861 56.2906" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-18" d="M43.9899 53.8728C43.9899 53.8728 41.2245 60.7717 56.4061 62.2351" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-20" fill-rule="evenodd" clip-rule="evenodd" d="M18.9278 29.8785C18.9278 31.8085 17.3637 33.3725 15.4338 33.3725C13.5038 33.3725 11.9387 31.8085 11.9387 29.8785C11.9387 27.9486 13.5038 26.3845 15.4338 26.3845C17.3637 26.3845 18.9278 27.9486 18.9278 29.8785Z" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke-22" d="M17.4985 26.8316C18.138 26.0286 19.1255 25.5139 20.2315 25.5139C22.1614 25.5139 23.7255 27.079 23.7255 29.009C23.7255 30.9389 22.1614 32.503 20.2315 32.503C19.5228 32.503 18.8634 32.2923 18.312 31.9296" stroke="#3F444C" stroke-width="1.54" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_6_3568">
+<rect width="99" height="89" fill="white"/>
+</clipPath>
+</defs>
+</svg>
