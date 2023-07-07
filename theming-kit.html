@@ -14,17 +14,13 @@
 </head>
 
 <body>
-    <h1 class="bg-azulOscuro font-bold text-h1 text-verde">Home</h1>
-    <p class="text-destaque">Esto es un parrafo destacado</p>
-    <p class="text-base">Esto es un parrafo base</p>
-    
     <!-- Navbar -->
     <nav
       class="max-w-[120rem] mx-auto flex gap-2 justify-evenly md:justify-around items-center inset-x-0 top-0 py-2 font-medium"
     >
       <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
       <div
-        class="hidden md:flex gap-4 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
+        class="hidden md:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
       >
         <a>La empresa</a>
         <a>¿Cómo funciona?</a>
@@ -56,7 +52,7 @@
     <!-- Footer -->
     <footer class="bottom-0 inset-x-0 pt-4">
         <div
-          class="flex flex-col max-w-[120rem] mx-auto gap-8 justify-center items-center px-4"
+          class="flex flex-col max-w-[120rem] mx-auto  justify-center items-center px-4"
         >
           <div
             class="flex flex-col gap-8 justify-center items-center md:flex-row"
@@ -69,10 +65,10 @@
               src="./assets/footer/icon_enisa.ac9e39e.svg"
               alt="icon_enisa.ac9e39e"
             />
-            <img src="./assets/footer/lanzadera.svg" alt="lanzadera" />
+            <img src="./assets/footer/lanzadera.png" alt="lanzadera" />
           </div>
           <div
-            class="flex flex-wrap flex-col gap-8 justify-center items-center md:flex-row"
+            class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row"
           >
             <img
               src="./assets/footer/kitdigital-logos 4.svg"
@@ -88,10 +84,10 @@
             />
           </div>
           <div
-            class="w-full h-20 flex flex-col gap-8 items-center md:flex-row justify-around py-2"
+            class="w-full  mt-16 flex flex-col gap-8 items-center md:flex-row justify-around py-2"
           >
             <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="kitdigital-logos" />
-            <div class="flex h-10 justify-center items-center gap-x-4">
+            <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
               <a
                 ><img src="./assets/footer/brand-instagram.svg" alt="instagram"
               /></a>
@@ -101,7 +97,7 @@
             </div>
           </div>
           <div class="h-[3px] w-[90%] rounded-lg bg-slate-300">
-            <p class="text-gray-400 text-center py-6">
+            <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
               <a href="">Política de Cookies Aviso Legal</a> |
               <a href="">Política de Privacidad</a>
             </p>
@@ -113,11 +109,17 @@
 
 
     <!-- Botones -->
+    <button
+    class="w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+    >
+    Button
+    </button>
     <!-- / Botones -->
 
 
 
     <!-- Formularios -->
+
     <!-- / Formularios -->
 
 
