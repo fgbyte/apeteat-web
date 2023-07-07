@@ -522,23 +522,19 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
 .bg-azulOscuro {
   --tw-bg-opacity: 1;
   background-color: rgb(60 71 91 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-h1 {
-  font-size: 2.8125rem;
 }
 
 .text-base {
@@ -547,6 +543,10 @@ video {
 
 .text-destaque {
   font-size: 1.5625rem;
+}
+
+.text-h1 {
+  font-size: 2.8125rem;
 }
 
 .font-bold {
