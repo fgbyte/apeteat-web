@@ -541,6 +541,14 @@ video {
   font-size: 2.8125rem;
 }
 
+.text-base {
+  font-size: 1rem;
+}
+
+.text-destaque {
+  font-size: 1.5625rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
