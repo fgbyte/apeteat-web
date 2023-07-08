@@ -3,6 +3,9 @@ module.exports = {
   content: ["./dist/*.html"],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-bg': "url('/dist/assets/companie_desktop_01 1.png')",
+      },
       screens: {
         sm: '480px',
         md: '768px',
