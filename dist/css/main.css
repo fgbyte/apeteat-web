@@ -638,10 +638,6 @@ p {
   height: 7rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .h-\[3px\] {
   height: 3px;
 }
@@ -652,10 +648,6 @@ p {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-\[42rem\] {
-  width: 42rem;
 }
 
 .w-\[90\%\] {
@@ -789,10 +781,6 @@ p {
   padding: 1.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -869,15 +857,6 @@ p {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.backdrop\:blur-\[2px\]::backdrop {
-  --tw-blur: blur(2px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop\:filter::backdrop {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .hover\:bg-azulOscuro:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(60 71 91 / var(--tw-bg-opacity));
@@ -899,10 +878,6 @@ p {
 }
 
 @media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:hidden {
     display: none;
   }
@@ -969,10 +944,6 @@ p {
 
 .\[\&\>label\>input\]\:h-10>label>input {
   height: 2.5rem;
-}
-
-.\[\&\>label\>input\]\:h-11>label>input {
-  height: 2.75rem;
 }
 
 .\[\&\>label\>input\]\:w-full>label>input {
