@@ -910,6 +910,10 @@ p {
     max-width: 36rem;
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:gap-6 {
     gap: 1.5rem;
   }
