@@ -46,13 +46,10 @@
           <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
           <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
           <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
-        </button> 
+        </button>
       </div>
       <!-- Menu abierto -->
-      <div
-        id="menu-items"
-        class="hidden md:hidden relative mt-2 text-center"
-      >
+      <div id="menu-items" class="hidden md:hidden relative mt-2 text-center">
         <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
           >La empresa</a
         >
@@ -72,74 +69,166 @@
         </div>
       </div>
     </nav>
+    <!-- Seccion home -->
+    <section class="lg:bg-custom-bg relative flex bg-cover py-16 " id="Home">
+      <div class="relative flex items-center flex-col flex-1 gap-3">
+        <h1 class="mx-2 max-w-[36rem]">
+          ¿Pregunta clave para los Buyer Personas?
+        </h1>
 
-    <section class="relative flex" id="Home">
-      <div class="relative flex items-center flex-col flex-1 ">
-        <h1 class="mx-2 mt-4 max-w-[36rem]">¿Pregunta clave para los Buyer Personas?</h1>
+        <img
+          class="relative lg:hidden inset-0"
+          src="./assets/companie_desktop_01 1.png"
+          alt="companie_desktop"
+        />
 
-        <img class="relative lg:hidden -z-10 inset-0" src="./assets/companie_desktop_01 1.png" alt="companie_desktop">
+        <p class="mx-2 max-w-[36rem]">
+          Ayudamos a <b>miles de empresas de Barcelona y Madrid</b> para
+          convertir la hora de la comida en el mejor momento del día. ¿Queréis
+          ser una de ellas?
+        </p>
 
-        <p class="mx-2 max-w-[36rem]">Ayudamos a miles de empresas de Barcelona y Madrid para convertir la hora de la comida en el mejor momento del día. ¿Queréis ser una de ellas?</p>
-
-        <form class="flex flex-col gap-3 mx-2 max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white">
+        <form
+          class="flex flex-col gap-3 mx-2 max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white"
+        >
           <div class="flex flex-col gap-2" id="numero-de-trabajadores">
             <label class="font-bold">Número de trabajadores</label>
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
               <label class="flex gap-2 items-center">
-                <input type="radio" name="num-trabajadores" value="menos-de-10">
+                <input
+                  type="radio"
+                  name="num-trabajadores"
+                  value="menos-de-10"
+                />
                 <span>menos de 10</span>
               </label>
               <label class="flex gap-2 items-center">
-                <input type="radio" name="num-trabajadores" value="10-a-50">
+                <input type="radio" name="num-trabajadores" value="10-a-50" />
                 <span>10 a 50</span>
               </label>
               <label class="flex gap-2 items-center">
-                <input type="radio" name="num-trabajadores" value="mas-de-50">
+                <input type="radio" name="num-trabajadores" value="mas-de-50" />
                 <span>más de 50</span>
               </label>
             </div>
           </div>
-      
-          <div class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal">
-            <label class="w-full font-bold" for="">Persona de Contacto
-            <input type="text" >
-          </label>
-          <label class="w-full font-bold" for="">Nombre Empresa
-            <input type="text" >
-          </label>
+
+          <div
+            class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal"
+          >
+            <label class="w-full font-bold" for=""
+              >Persona de Contacto
+              <input type="text" />
+            </label>
+            <label class="w-full font-bold" for=""
+              >Nombre Empresa
+              <input type="text" />
+            </label>
           </div>
-      
-          <div class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal">
-            <label class="w-full font-bold" for="">E-mail
-            <input type="email" >
-          </label>
-          <label class="w-full font-bold" for="">Teléfono
-            <input type="text">
-          </label>
+
+          <div
+            class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal"
+          >
+            <label class="w-full font-bold" for=""
+              >E-mail
+              <input type="email" />
+            </label>
+            <label class="w-full font-bold" for=""
+              >Teléfono
+              <input type="text" />
+            </label>
           </div>
-      
+
           <div class="flex flex-col">
             <label class="">Consulta</label>
-            <textarea class="max-h-28 h-28 rounded-md px-2 text-black"></textarea>
+            <textarea
+              class="max-h-28 h-28 rounded-md px-2 text-black"
+            ></textarea>
           </div>
-      
+
           <div class="flex items-center gap-2">
-            <input id="políticas de privacidad" type="checkbox">
-            <label for="políticas de privacidad">Acepto las políticas de privacidad</label>
+            <input id="políticas de privacidad" type="checkbox" />
+            <label for="políticas de privacidad"
+              >Acepto las políticas de privacidad</label
+            >
           </div>
-      
+
           <button
-        class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
-        >
-        Enviar
-        </button>
-      
+            class="w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+          >
+            Enviar
+          </button>
         </form>
       </div>
-      <img class="hidden lg:block min-h-fit w-full  absolute -z-10 inset-0" src="./assets/companie_desktop_01 1.png" alt="companie_desktop">
       <div class="hidden lg:flex flex-[0.60]"></div>
     </section>
 
+    <section class="relative mb-4 bg-verde">
+      <h1 class="">¿Sabías qué...?</h1>
+      
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bottom-0 inset-x-0 pt-4 mt-8">
+      <div
+        class="flex flex-col max-w-[120rem] mx-auto justify-center items-center px-4"
+      >
+        <div
+          class="flex flex-col gap-8 justify-center items-center md:flex-row"
+        >
+          <img
+            src="./assets/footer/google_startups.svg"
+            alt="google_startups"
+          />
+          <img
+            src="./assets/footer/icon_enisa.ac9e39e.svg"
+            alt="icon_enisa.ac9e39e"
+          />
+          <img src="./assets/footer/lanzadera.png" alt="lanzadera" />
+        </div>
+        <div
+          class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row"
+        >
+          <img
+            src="./assets/footer/kitdigital-logos 4.svg"
+            alt="kitdigital-logos"
+          />
+          <img
+            src="./assets/footer/kitdigital-logos 2.svg"
+            alt="kitdigital-logos"
+          />
+          <img
+            src="./assets/footer/kitdigital-logos 3.svg"
+            alt="kitdigital-logos"
+          />
+        </div>
+        <div
+          class="w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-around py-2"
+        >
+          <img
+            class="h-10"
+            src="./assets/apeteat_logo 1.svg"
+            alt="kitdigital-logos"
+          />
+          <div
+            class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer"
+          >
+            <a
+              ><img src="./assets/footer/brand-instagram.svg" alt="instagram"
+            /></a>
+            <a
+              ><img src="./assets/footer/brand-linkedin.svg" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+        <div class="h-[3px] w-[90%] rounded-lg bg-slate-300">
+          <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
+            <a href="">Política de Cookies Aviso Legal</a> |
+            <a href="">Política de Privacidad</a>
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- Logica del menu de navegacion -->
     <script>
       const menuToggle = document.getElementById("menu-toggle");
