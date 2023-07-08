@@ -679,6 +679,10 @@ p {
   max-width: 36rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -819,6 +823,11 @@ p {
   padding-bottom: 1.5rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -925,6 +934,10 @@ p {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:max-w-\[36rem\] {
+    max-width: 36rem;
   }
 
   .lg\:gap-6 {
