@@ -37,13 +37,13 @@
           </div>
         </div>
         <!-- Navbar Mobile-->
-        <div class="flex items-center gap-4">
+        <div class="lg:hidden flex items-center justify-center gap-4">
         <button
-          class="flex lg:hidden justify-self-end rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+          class="flex justify-self-end rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
         >
           93 123 45 67
         </button>
-        <button id="menu-toggle" class="flex flex-col gap-1 lg:hidden">
+        <button id="menu-toggle" class="flex flex-col gap-1">
           <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
           <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
           <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
@@ -51,7 +51,7 @@
       </div>
       </div>
       <!-- Menu abierto -->
-      <div id="menu-items" class="hidden md:hidden relative mt-2 text-center">
+      <div id="menu-items" class="hidden lg:hidden relative mt-2 text-center">
         <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
           >La empresa</a
         >
@@ -96,7 +96,7 @@
           class="flex flex-col gap-3 mx-2 max-w-full lg:max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white"
         >
           <div class="flex flex-col gap-2" id="numero-de-trabajadores">
-            <label class="font-bold">Número de trabajadores</label>
+            <label class="font-bold">Número de trabajadorxs</label>
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
               <label class="flex gap-2 items-center">
                 <input
@@ -169,7 +169,16 @@
     <!-- ¿Sabías qué...? -->
     <section class="relative mb-4 bg-verde">
       <h1 class="text-center py-16">¿Sabías qué...?</h1>
-      
+      <div class="flex flex-col lg:flex-row">
+        <div>
+          <img src="./assets/N-67.svg" alt="N-67">
+          <p>
+            <b>El 67% de lxs empleadxs</b>
+            Se sentirían más valoradxs y apreciadxs por su empresa si se les ofrecieran ventajas relacionadas con la alimentación.
+          </p>
+        </div>
+
+      </div>
     </section>
 
     <!-- Footer section -->
