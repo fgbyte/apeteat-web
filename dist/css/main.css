@@ -904,6 +904,11 @@ p {
   padding-bottom: 2rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
