@@ -2,20 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apeteat</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- Fonts -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
     </style>
 </head>
 
 <body>
-    <h1 class="text-3xl bg-slate-200 font-bold">Contacto</h1>
-    <p class="">Esto es un parrafo</p>
+    <!-- Seccion contact -->
+    <section class="lg:bg-custom-bg-contact relative flex bg-cover py-8 " id="contact-hero">
+        <div class="relative flex items-center flex-col flex-1 gap-3">
+            <div class="relative flex md:items-center flex-col gap-3">
+                <h1 class="mx-2 lg:self-stretch max-w-[36rem]">
+                    ¡Ponte en contacto!
+                </h1>
+
+                <img class="relative lg:hidden inset-0" src="./assets/hero_contact_desktop 1.png" alt="contact_image" />
+
+                <p class="mx-2 max-w-[36rem]">
+                    Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac
+                    blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+                    et lacinia ipsum quam nec dui.
+                </p>
+            </div>
+
+            <form
+                class="flex flex-col gap-3 mx-2 max-w-full lg:max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white">
+                <div class="flex flex-col gap-2" id="numero-de-trabajadores">
+                    <label class="font-bold">Número de trabajadores</label>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
+                        <label class="flex gap-2 items-center">
+                            <input type="radio" name="num-trabajadores" value="menos-de-10" />
+                            <span>menos de 10</span>
+                        </label>
+                        <label class="flex gap-2 items-center">
+                            <input type="radio" name="num-trabajadores" value="10-a-50" />
+                            <span>10 a 50</span>
+                        </label>
+                        <label class="flex gap-2 items-center">
+                            <input type="radio" name="num-trabajadores" value="mas-de-50" />
+                            <span>más de 50</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal">
+                    <label class="w-full font-bold" for="">Persona de Contacto
+                        <input type="text" />
+                    </label>
+                    <label class="w-full font-bold" for="">Nombre Empresa
+                        <input type="text" />
+                    </label>
+                </div>
+
+                <div
+                    class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal">
+                    <label class="w-full font-bold" for="">E-mail
+                        <input type="email" />
+                    </label>
+                    <label class="w-full font-bold" for="">Teléfono
+                        <input type="text" />
+                    </label>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="">Consulta</label>
+                    <textarea class="max-h-28 h-28 rounded-md px-2 text-black"></textarea>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input id="políticas de privacidad" type="checkbox" />
+                    <label for="políticas de privacidad">Acepto las políticas de privacidad</label>
+                </div>
+
+                <button class="w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+                    Enviar
+                </button>
+            </form>
+        </div>
+        <div class="hidden lg:flex flex-[0.60]"></div>
+    </section>
+    <!-- Cards -->
+    <section id="contact-cards" class="my-20 py-8">
+        <div
+            class="flex flex-col items-center bg-verde p-10 lg:bg-white md:flex-row md:justify-center gap-y-12 md:gap-10">
+            <div class="flex flex-col lg:flex-row lg:gap-10 xl:gap-16">
+                <div class="flex flex-col items-center gap-3 p-5 lg:bg-verde lg:w-80 lg:h-72 lg:p-10">
+                    <img src="./assets/icon_mail 1.svg" alt="mail">
+                    <h3 class="text-white">Contáctanos</h3>
+                    <p class="text-center px-10 md:px-0">
+                        Escribe a <b>hola@apeteat.com</b>
+                        y te responderemos
+                        lo más pronto posible.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3 p-5 lg:bg-verde lg:w-80 lg:h-72 lg:p-10">
+                    <img src="./assets/icon_social 1.svg" alt="mail">
+                    <h3 class="text-white text-center">Teléfono - WhatsApp
+                    </h3>
+                    <p class="text-center">
+                        Horario: 9 - 14:30h
+                        <br>
+                        (+34) 654 604 331
+                        <br>
+                        ¡Contáctanos!
+
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-3 p-5 lg:bg-verde lg:w-80 lg:h-72 lg:p-10">
+                    <img src="./assets/icon_phone 1.svg" alt="mail">
+                    <h3 class="text-white text-center">Redes Sociales</h3>
+                    <p class="text-center px-10 md:px-0">
+                        Síguenos y mantente al día de todas las
+                        novedades en nuestras redes sociales
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 
 </html>
