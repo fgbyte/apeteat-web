@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         'custom-bg': "url('/dist/assets/companie_desktop_01 1.png')",
         'custom-bg-contact': "url('/dist/assets/hero_contact_desktop 1.png')",
+        'custom-bg-como-funciona': "url('/dist/assets/our_food_desktop_01 1.png')",
       },
       screens: {
         sm: '480px',
