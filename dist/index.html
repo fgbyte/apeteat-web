@@ -255,24 +255,32 @@
       const listaEmpleados = document.getElementById('lista-empleados');
     
       // Establecer por defecto la lista de beneficios de la empresa
-      empresaBtn.classList.add('active');
+      empresaBtn.classList.add('bg-verde');
+      empleadosBtn.classList.remove('bg-verde');
       listaEmpresa.classList.remove('lg:hidden');
       listaEmpleados.classList.add('lg:hidden');
+      empleadosBtn.classList.add('bg-gray-300');
     
       // Manejador de evento click para el botón de la empresa
       empresaBtn.addEventListener('click', () => {
-        empresaBtn.classList.add('active');
-        empleadosBtn.classList.remove('active');
+        empresaBtn.classList.remove('bg-gray-300');
+        empresaBtn.classList.add('bg-verde');
+        empleadosBtn.classList.remove('bg-verde');
+        empleadosBtn.classList.add('bg-gray-300');
         listaEmpresa.classList.remove('lg:hidden');
         listaEmpleados.classList.add('lg:hidden');
+        
       });
     
       // Manejador de evento click para el botón de empleados
       empleadosBtn.addEventListener('click', () => {
-        empleadosBtn.classList.add('active');
-        empresaBtn.classList.remove('active');
+        empleadosBtn.classList.remove('bg-gray-300');
+        empleadosBtn.classList.add('bg-verde');
+        empresaBtn.classList.remove('bg-verde');
+        empresaBtn.classList.add('bg-gray-300');
         listaEmpleados.classList.remove('lg:hidden');
         listaEmpresa.classList.add('lg:hidden');
+
       });
     </script>
     <!-- Nuestros clientes recomiendan -->
