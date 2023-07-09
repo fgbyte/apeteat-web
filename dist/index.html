@@ -72,8 +72,8 @@
       </div>
     </nav>
     <!-- Seccion home -->
-    <section class="lg:bg-custom-bg relative flex bg-cover py-16 " id="Home">
-      <div class="relative flex items-center flex-col flex-1 gap-3">
+    <section class="lg:min-h-screen lg:bg-custom-bg relative flex bg-cover py-16" id="Home">
+      <div class="relative flex items-center justify-center flex-col flex-1 gap-3">
         <h1 class="mx-2 max-w-[36rem]">
           ¿Pregunta clave para los Buyer Personas?
         </h1>
@@ -201,6 +201,81 @@
       </div>
     </section>
 
+    <!-- Beneficios para la empresa y empledxs -->
+    <section class="flex flex-col justify-center items-center py-16" id="Beneficios">
+      <div class="max-w-[870px] flex flex-col gap-6 mx-2">
+        <h2 class="text-center">Beneficios para la empresa y empledxs</h2>
+        <p class="text-center text-2xl leading-30">Ofrece una dieta saludable y promueve el buen humor que genera una comida en equipo. Este tiempo de calidad diario mejorará su relación y su bienestar. ¡Un equipo feliz tiene muchos beneficios!</p>
+        <div class="flex">
+          <div class="hidden lg:flex flex-1 flex-col justify-center gap-8">
+            <button id="empresaBtn" class="text-3xl font-bold text-start w-fit rounded-md bg-verde hover:bg-azulOscuro py-8 px-11 text-white active">
+              Beneficios para<br/> la empresa
+            </button>
+            <button id="empleadosBtn" class="text-3xl font-bold text-start w-fit rounded-md bg-verde hover:bg-azulOscuro py-8 px-11 text-white">
+              Beneficios para<br/> los empleadxs
+            </button>
+          </div>
+          <div class="mx-auto flex flex-1 lg:flex-[0.94] flex-col justify-center gap-4 min-h-[495px] [&>ul>li]:flex [&>ul>li]:gap-1">
+            <h3 class="lg:hidden mt-6 mx-2">Beneficios para la empresa</h3>
+            <ul id="lista-empresa" class="lg:hidden flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2 ">
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la captación del talento</li>        
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la retención del talento</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Fomenta el team building</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Beneficia la cultura de empresa</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Incrementa el rendimiento</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Motiva al equipo</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Fortalece la marca de la empresa</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Empleadxs felices</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Fácil gestión</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Servicio personalizado</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Atención al cliente personalizada</li>
+            </ul>
+            <h3 class="lg:hidden mt-6 mx-2">Beneficios para lxs empleadxs</h3>
+            <ul id="lista-empleados" class="lg:hidden flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2">
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la salud y bienestar de los empleados</li>     
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Fomenta la creatividad y la innovación</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Ayuda a reducir el estrés y la fatiga</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la calidad de vida laboral</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Aumenta la motivación y la satisfacción laboral</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora el clima laboral</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Fomenta la lealtad hacia la empresa</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Incrementa la productividad y la eficiencia</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la reputación de la empresa</li>
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Fomenta la responsabilidad social empresarial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      const empresaBtn = document.getElementById('empresaBtn');
+      const empleadosBtn = document.getElementById('empleadosBtn');
+      const listaEmpresa = document.getElementById('lista-empresa');
+      const listaEmpleados = document.getElementById('lista-empleados');
+    
+      // Establecer por defecto la lista de beneficios de la empresa
+      empresaBtn.classList.add('active');
+      listaEmpresa.classList.remove('lg:hidden');
+      listaEmpleados.classList.add('lg:hidden');
+    
+      // Manejador de evento click para el botón de la empresa
+      empresaBtn.addEventListener('click', () => {
+        empresaBtn.classList.add('active');
+        empleadosBtn.classList.remove('active');
+        listaEmpresa.classList.remove('lg:hidden');
+        listaEmpleados.classList.add('lg:hidden');
+      });
+    
+      // Manejador de evento click para el botón de empleados
+      empleadosBtn.addEventListener('click', () => {
+        empleadosBtn.classList.add('active');
+        empresaBtn.classList.remove('active');
+        listaEmpleados.classList.remove('lg:hidden');
+        listaEmpresa.classList.add('lg:hidden');
+      });
+    </script>
+    <!-- Nuestros clientes recomiendan -->
     <!-- Footer section -->
     <footer class="bottom-0 inset-x-0 pt-4 mt-8">
       <div
