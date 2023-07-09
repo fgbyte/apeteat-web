@@ -558,6 +558,10 @@ p {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -573,6 +577,10 @@ p {
 
 .bottom-0 {
   bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-0 {
@@ -623,12 +631,20 @@ p {
   margin-top: 2rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -704,6 +720,10 @@ p {
   flex: 0.60;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -714,6 +734,10 @@ p {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -730,6 +754,10 @@ p {
 
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-12 {
@@ -765,6 +793,10 @@ p {
   row-gap: 3rem;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .justify-self-end {
   justify-self: end;
 }
@@ -780,6 +812,11 @@ p {
 .bg-\[\#00CFB5\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 207 181 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F5F5F5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -852,6 +889,11 @@ p {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -905,6 +947,11 @@ p {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-verde {
+  --tw-text-opacity: 1;
+  color: rgb(3 208 182 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -976,6 +1023,11 @@ p {
 }
 
 @media (min-width: 976px) {
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -988,8 +1040,16 @@ p {
     height: 18rem;
   }
 
+  .lg\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .lg\:w-80 {
     width: 20rem;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:max-w-\[36rem\] {
@@ -1000,12 +1060,24 @@ p {
     flex: 0.94;
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .lg\:gap-44 {
+    gap: 11rem;
   }
 
   .lg\:gap-6 {
@@ -1014,6 +1086,10 @@ p {
 
   .lg\:self-stretch {
     align-self: stretch;
+  }
+
+  .lg\:justify-self-end {
+    justify-self: end;
   }
 
   .lg\:bg-verde {
@@ -1034,8 +1110,17 @@ p {
     background-image: url('/dist/assets/hero_contact_desktop 1.png');
   }
 
+  .lg\:bg-custom-bg-form {
+    background-image: url('/dist/assets/home/img_contact_form 1.png');
+  }
+
   .lg\:p-10 {
     padding: 2.5rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
