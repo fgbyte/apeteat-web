@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apeteat</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Fonts -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+    </style>
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav class="max-w-[80rem] mx-auto inset-x-0 top-0 py-2 font-medium">
+        <div class="flex gap-2 justify-between items-center mx-3">
+          <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
+          <div
+            class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
+          >
+            <a>La empresa</a>
+            <a>¿Cómo funciona?</a>
+            <a>Regístrate</a>
+            <a>Contacto</a>
+            <button
+              class="rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+            >
+              93 123 45 67
+            </button>
+            <div
+              class="hover:[&>button]:text-verde active:[&>button]:text-gray-300"
+              name="lenguaje"
+              id="lenguaje"
+            >
+              <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+            </div>
+          </div>
+          <!-- Navbar Mobile-->
+          <div class="lg:hidden flex items-center justify-center gap-4">
+          <button
+            class="flex justify-self-end rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+          >
+            93 123 45 67
+          </button>
+          <button id="menu-toggle" class="flex flex-col gap-1">
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+          </button>
+        </div>
+        </div>
+        <!-- Menu abierto -->
+        <div id="menu-items" class="hidden lg:hidden relative mt-2 text-center">
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >La empresa</a
+          >
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >¿Cómo funciona?</a
+          >
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >Regístrate</a
+          >
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >Contacto</a
+          >
+          <div
+            class="px-4 py-2 hover:[&>button]:text-verde active:[&>button]:text-gray-300"
+          >
+            <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+          </div>
+        </div>
+      </nav>
+      <!-- Somos Apeteat -->
+      <section class="flex flex-col justify-center items-center py-16 gap-20" id="Somos-Apeteat" >
+        <div class="max-w-[870px] mx-2 flex flex-col gap-4">
+            <h2 class="text-center ">Somos Apeteat</h2>
+            <p class="text-center text-2xl leading-30">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, optio sunt blanditiis facere corrupti cumque voluptate? Deserunt sunt quas delectus? Rem natus omnis harum aliquam nesciunt fuga impedit sed perferendis.</p>
+        </div>
+        <div class="flex flex-col gap-20 justify-center items-center max-w-[80rem]">
+            <div id="card-empresa" class="flex flex-col lg:flex-row mx-2" >
+                <img class="w-full lg:w-auto lg:h-[30rem]" src="./assets/empresa/home_02.png" alt="Imagen de ejemplo">
+                <div class="flex flex-col gap-6 justify-center items-start p-12">
+                  <h3>Comida 100% Natural</h3>
+                  <p>Nuestro equipo de chefs y nutricionistas utilizan los mejores ingredientes locales y de temporada para crear, con mucho mimo, recetas naturales, únicas y sin aditivos añadidos.</p>
+                  <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+                    Contáctanos
+                  </button>
+                </div>
+            </div>
+            <div id="card-empresa" class="flex flex-col lg:flex-row-reverse mx-2" >
+                <img class="w-full lg:w-auto lg:h-[30rem]" src="./assets/empresa/home_03.png" alt="Imagen de ejemplo">
+                <div class="flex flex-col gap-6 justify-center items-start p-12">
+                  <h3>Packaging 100% Ecológico</h3>
+                  <p>Somos una empresa comprometida con el medioambiente y, después de mucho esfuerzo, podemos decir que ya no usamos plástico. Nuestras bolsas, envases, tapas, envoltorios, etiquetas, cubiertos y servilletas son 100% biodegradables y compostables.</p>
+                  <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+                    Contáctanos
+                  </button>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- ApetEat, una empresa con valores -->
+      <section class="flex flex-col justify-center items-center py-16 gap-16 bg-[#f5f5f5]" id="Somos-Apeteat" >
+        <div class="max-w-[870px] mx-2 flex flex-col gap-4">
+            <h3 class="text-center ">ApetEat, una empresa con valores</h3>
+            <p class="text-center text-2xl leading-30">Somos una empresa medioambiental y socialmente responsable. Para ello, defendemos la inclusión y la igualdad entre seres humanos colaborando con Bamba (en Kenya) y con diferentes organizaciones de Barcelona y Madrid, impulsamos la sostenibilidad evitando las mermas y colaborando con nuestra agua social AUARA, luchamos por proteger el medio ambiente con nuestro packaging 100% ecológico…</p>
+        </div>
+        <div class="max-w-[80rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <img src="./assets/empresa/valores-niña-africana-con-botella-de-agua-potable.png" alt="africa">
+            <img src="./assets/empresa/valores-niño-africano-comiendo-maiz.png" alt="africa">
+            <img src="./assets/empresa/valores-packaging-biodegradable-utilizado-como-maceta.png" alt="africa">
+            <img src="./assets/empresa/valores-sanitarios-con-mascarillas-aplauden.png" alt="africa">
+            <img src="./assets/empresa/valores-trabajador-de-apeteat-aguantando-bolsas-entregas.png" alt="africa">
+            <img src="./assets/empresa/valores-volunarios-donando-alimentos.png" alt="africa">
+        </div>     
+      </section>
+      <!-- Footer section -->
+      <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
+        <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
+          <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
+            <img src="./assets/footer/google_startups.svg"alt="google_startups"/>
+            <img src="./assets/footer/icon_enisa.ac9e39e.svg"alt="icon_enisa.ac9e39e"/>
+            <img src="./assets/footer/lanzadera.png" alt="lanzadera" />
+          </div>
+          <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row"  >
+            <img src="./assets/footer/kitdigital-logos 4.svg"  alt="kitdigital-logos" />
+            <img src="./assets/footer/kitdigital-logos 2.svg" alt="kitdigital-logos" />
+            <img src="./assets/footer/kitdigital-logos 3.svg" alt="kitdigital-logos"/>
+          </div>
+          <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2" >
+            <img class="h-10" src="./assets/apeteat_logo 1.svg"  alt="kitdigital-logos"/>
+            <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
+              <a><img src="./assets/footer/brand-instagram.svg" alt="instagram" /></a>
+              <a><img src="./assets/footer/brand-linkedin.svg" alt="linkedin" /></a>
+            </div>
+          </div>
+          <div class="h-[3px] w-full rounded-lg bg-slate-300">
+            <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
+              <a href="">Política de Cookies Aviso Legal</a> |
+              <a href="">Política de Privacidad</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Logica del menu de navegacion -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menuItems = document.getElementById("menu-items");
+  
+        menuToggle.addEventListener("click", () => {
+          menuItems.classList.toggle("hidden");
+        });
+      </script>
+</body>
+
+</html>
