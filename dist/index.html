@@ -74,7 +74,7 @@
     <!-- Seccion home -->
     <section class="lg:min-h-screen lg:bg-custom-bg relative bg-cover py-16" id="Home">
       <div class="relative m-auto flex max-w-7xl">
-      <div class=" relative flex flex-col items-start justify-center  flex-1 gap-3">
+      <div class=" relative flex flex-col lg:items-start justify-center  flex-1 gap-3">
         <h1 class="mx-2 max-w-[38rem]">
           ¿Pregunta clave para los Buyer Personas?
         </h1>
@@ -283,44 +283,82 @@
 
     <section class="relative py-16 bg-grisFondo flex flex-col justify-center items-center">
       <h2 class="pb-16 px-2">Nuestros clientes recomiendan</h2>
-      <div id="carrusel" class="snap-x flex gap-6 min-w-fit [&>div]:min-w-[300px]">
-        <div id="card-1" class="snap-center flex flex-col gap-2 bg-white max-w-[408px] rounded-md p-9 border border-solid border-verde">
+      <div id="carrusel" class="snap-proximity snap-x  flex gap-6 lg:min-w-fit w-screen lg:w-auto overflow-x-auto scroll-snap-type-x">
+        <div id="card-1" class="snap-center min-w-full lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
           <div class="flex gap-2 justify-start items-center">
             <img src="./assets//home/image 2.png" alt="image">
             <div>
               <p>Alfredo Punzón</p>
               <p>EMEA Retail Analyst</p>
-            </div>           
+            </div>
           </div>
-          <p class="italic">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
+          <p class="italic lg:max-w-xs">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
         </div>
-        <div id="card-2" class="snap-center flex flex-col gap-2 bg-white max-w-[408px] rounded-md p-9 border border-solid border-verde">
+        <div id="card-2" class="snap-center min-w-full lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
           <div class="flex gap-2 justify-start items-center">
             <img src="./assets//home/teamleader 1.png" alt="image">
             <div>
               <p>Pablo Martínez</p>
               <p>Sales Talent</p>
-            </div>           
+            </div>
           </div>
-          <p class="italic">"El almuerzo se había convertido en un problema en nuestra oficina y ApetEat nos dio la solución para que todos nuestros empleados comiesen sano a diario. ¡Un acierto!”</p>
+          <p class="italic lg:max-w-xs">"El almuerzo se había convertido en un problema en nuestra oficina y ApetEat nos dio la solución para que todos nuestros empleados comiesen sano a diario. ¡Un acierto!”</p>
         </div>
-        <div id="card-3" class="snap-center flex flex-col gap-2 bg-white max-w-[408px] rounded-md p-9 border border-solid border-verde">
+        <div id="card-3" class="snap-center min-w-full lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
           <div class="flex gap-2 justify-start items-center">
             <img src="./assets//home/idealista 1.png" alt="image">
             <div>
               <p><b>Alfredo Punzón</b></p>
               <p>EMEA Retail Analyst</p>
-            </div>           
+            </div>
           </div>
-          <p class="italic">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
+          <p class="italic lg:max-w-xs">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
         </div>
       </div>
-     <div id="controles" class="flex gap-2 mt-4">
-      <div>card1</div>
-      <div>card2</div>
-      <div>card3</div>
-     </div>
+      <div id="controles" class="lg:hidden flex gap-6 mt-4">
+        <div id="control-1" class="h-4 w-4 bg-gray-400 rounded-full"></div>
+        <div id="control-2" class="h-4 w-4 bg-gray-400 rounded-full"></div>
+        <div id="control-3" class="h-4 w-4 bg-gray-400 rounded-full"></div>
+      </div>
     </section>
+    
+    <script>
+      const carousel = document.getElementById('carrusel');
+      const controls = document.getElementById('controles');
+      const control1 = document.getElementById('control-1');
+      const control2 = document.getElementById('control-2');
+      const control3 = document.getElementById('control-3');
+
+      // Establecer color por defecto
+       carousel.classList.remove("bg-gray-400")
+       control1.classList.add("bg-gray-600")
+       
+      // Eventos
+      control1.addEventListener('click', () => {
+        carousel.scroll({ left:0, behavior: 'smooth' });
+        control1.classList.remove("bg-gray-600")
+        control2.classList.remove("bg-gray-600")
+        control3.classList.remove("bg-gray-600")
+        control1.classList.add("bg-gray-600")
+
+      });
+    
+      control2.addEventListener('click', () => {
+        carousel.scroll({ left: carousel.offsetWidth, behavior: 'smooth' });
+        control1.classList.remove("bg-gray-600")
+        control2.classList.remove("bg-gray-600")
+        control3.classList.remove("bg-gray-600")
+        control2.classList.add("bg-gray-600")
+      });
+    
+      control3.addEventListener('click', () => {
+        carousel.scroll({ left: carousel.offsetWidth * 2, behavior: 'smooth' });
+        control1.classList.remove("bg-gray-600")
+        control2.classList.remove("bg-gray-600")
+        control3.classList.remove("bg-gray-600")
+        control3.classList.add("bg-gray-600")
+      });
+    </script>
 
     <!-- Un servicio para todas las empresas -->
     <section class="flex flex-col justify-center items-center py-16">
