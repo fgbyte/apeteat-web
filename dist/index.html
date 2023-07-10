@@ -13,8 +13,9 @@
   </head>
 
   <body>
-    <nav class="max-w-[80rem] mx-auto inset-x-0 top-0 py-2 font-medium">
-      <div class="flex gap-2 justify-between items-center mx-3">
+    <nav class="sticky bg-white z-50 mx-auto inset-x-0 top-0 py-2 font-medium ">
+      <div class="mx-3">
+      <div class="flex gap-2 justify-between items-center mx-auto max-w-[80rem]">
         <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
         <div
           class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
@@ -70,6 +71,7 @@
           <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
         </div>
       </div>
+    </div>
     </nav>
     <!-- Seccion home -->
     <section class="lg:min-h-screen lg:bg-custom-bg relative bg-cover py-16" id="Home">
@@ -315,7 +317,7 @@
           <p class="italic lg:max-w-xs">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
         </div>
       </div>
-      <div id="controles" class="lg:hidden flex gap-8 mt-4">
+      <div id="controles" class="lg:hidden flex gap-8 mt-4 hover:[&>div]:cursor-pointer">
         <div id="control-1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
         <div id="control-2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
         <div id="control-3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
