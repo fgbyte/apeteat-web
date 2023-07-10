@@ -801,6 +801,14 @@ p {
   flex: 0.60;
 }
 
+.flex-\[0\.30\] {
+  flex: 0.30;
+}
+
+.flex-\[0\.20\] {
+  flex: 0.20;
+}
+
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
