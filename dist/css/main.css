@@ -589,6 +589,10 @@ p {
   top: 0px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -759,6 +763,10 @@ p {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[38rem\] {
+  max-width: 38rem;
 }
 
 .flex-1 {
@@ -1251,6 +1259,10 @@ p {
 
   .lg\:max-w-\[36rem\] {
     max-width: 36rem;
+  }
+
+  .lg\:max-w-\[38rem\] {
+    max-width: 38rem;
   }
 
   .lg\:flex-\[0\.94\] {
