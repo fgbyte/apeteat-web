@@ -696,28 +696,12 @@ p {
   height: 7rem;
 }
 
-.h-\[3px\] {
-  height: 3px;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-4 {
   height: 1rem;
+}
+
+.h-\[3px\] {
+  height: 3px;
 }
 
 .max-h-28 {
@@ -730,6 +714,10 @@ p {
 
 .w-36 {
   width: 9rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-40 {
@@ -757,49 +745,12 @@ p {
   width: 100%;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-64 {
-  width: 16rem;
-}
-
-.w-\[16rem\] {
-  width: 16rem;
-}
-
 .w-screen {
   width: 100vw;
 }
 
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.min-w-fit {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-}
-
-.min-w-\[280px\] {
-  min-width: 280px;
-}
-
 .min-w-full {
   min-width: 100%;
-}
-
-.min-w-\[98\%\] {
-  min-width: 98%;
 }
 
 .max-w-7xl {
@@ -838,14 +789,6 @@ p {
   max-width: 100%;
 }
 
-.max-w-xs {
-  max-width: 20rem;
-}
-
-.max-w-screen-sm {
-  max-width: 480px;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -858,24 +801,12 @@ p {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
 
-.snap-both {
-  scroll-snap-type: both var(--tw-scroll-snap-strictness);
-}
-
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
-}
-
 .snap-proximity {
   --tw-scroll-snap-strictness: proximity;
 }
 
 .snap-center {
   scroll-snap-align: center;
-}
-
-.snap-always {
-  scroll-snap-stop: always;
 }
 
 .grid-cols-1 {
@@ -987,16 +918,16 @@ p {
   overflow-x: auto;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border {
@@ -1037,6 +968,16 @@ p {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-grisFondo {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
@@ -1055,26 +996,6 @@ p {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40 {
@@ -1117,14 +1038,9 @@ p {
   padding: 2.25rem;
 }
 
-<<<<<<< HEAD
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-=======
-.p-4 {
-  padding: 1rem;
->>>>>>> dev-ggc-home-carrusel
 }
 
 .px-10 {
@@ -1197,21 +1113,12 @@ p {
   padding-bottom: 2rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .pb-16 {
   padding-bottom: 4rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -1232,24 +1139,8 @@ p {
   line-height: 2.25rem;
 }
 
-<<<<<<< HEAD
 .text-destaque {
   font-size: 1.5625rem;
-=======
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
->>>>>>> dev-ggc-home-carrusel
 }
 
 .font-bold {
@@ -1329,29 +1220,8 @@ p {
 }
 
 @media (min-width: 768px) {
-<<<<<<< HEAD
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-=======
-  .md\:h-16 {
-    height: 4rem;
-  }
-
-  .md\:w-16 {
-    width: 4rem;
-  }
-
-  .md\:w-80 {
-    width: 20rem;
-  }
-
-  .md\:max-w-none {
-    max-width: none;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
->>>>>>> dev-ggc-home-carrusel
   }
 
   .md\:flex-row {
@@ -1370,10 +1240,6 @@ p {
     gap: 2.5rem;
   }
 
-  .md\:p-9 {
-    padding: 2.25rem;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1382,29 +1248,6 @@ p {
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:pb-16 {
-    padding-bottom: 4rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .md\:backdrop-blur-\[2px\] {
@@ -1523,13 +1366,10 @@ p {
     flex-direction: row;
   }
 
-<<<<<<< HEAD
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
   }
 
-=======
->>>>>>> dev-ggc-home-carrusel
   .lg\:items-start {
     align-items: flex-start;
   }
@@ -1644,11 +1484,6 @@ p {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-<<<<<<< HEAD
-.\[\&\>div\]\:min-w-\[300px\]>div {
-  min-width: 300px;
-}
-
 .\[\&\>input\]\:h-10>input {
   height: 2.5rem;
 }
@@ -1675,8 +1510,6 @@ p {
   font-weight: 400;
 }
 
-=======
->>>>>>> dev-ggc-home-carrusel
 .\[\&\>label\>input\]\:h-10>label>input {
   height: 2.5rem;
 }
