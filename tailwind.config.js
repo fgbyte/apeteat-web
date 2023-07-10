@@ -7,6 +7,8 @@ module.exports = {
         'custom-bg': "url('/dist/assets/companie_desktop_01 1.png')",
         'custom-bg-contact': "url('/dist/assets/hero_contact_desktop 1.png')",
         'custom-bg-form': "url('/dist/assets/home/img_contact_form 1.png')",
+        'custom-bg-como-funciona': "url('/dist/assets/our_food_desktop_01 1.png')",
+        'custom-bg-price': "url('/dist/assets/how_menus 1.png')",
       },
       screens: {
         sm: '480px',
