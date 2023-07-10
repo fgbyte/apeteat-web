@@ -753,6 +753,10 @@ p {
   max-width: 36rem;
 }
 
+.max-w-\[38rem\] {
+  max-width: 38rem;
+}
+
 .max-w-\[80rem\] {
   max-width: 80rem;
 }
@@ -763,10 +767,6 @@ p {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[38rem\] {
-  max-width: 38rem;
 }
 
 .flex-1 {
@@ -1144,10 +1144,6 @@ p {
     flex-direction: row;
   }
 
-  .md\:items-center {
-    align-items: center;
-  }
-
   .md\:justify-center {
     justify-content: center;
   }
@@ -1311,10 +1307,6 @@ p {
 
   .lg\:self-start {
     align-self: flex-start;
-  }
-
-  .lg\:self-stretch {
-    align-self: stretch;
   }
 
   .lg\:justify-self-end {
