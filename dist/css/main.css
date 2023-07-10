@@ -628,6 +628,10 @@ p {
   margin-bottom: 5rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -670,10 +674,6 @@ p {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .block {
@@ -1018,12 +1018,16 @@ p {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
 
-.p-12 {
-  padding: 3rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-20 {
@@ -1036,14 +1040,6 @@ p {
 
 .p-9 {
   padding: 2.25rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-1 {
@@ -1121,8 +1117,31 @@ p {
   padding-bottom: 2rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-4 {
@@ -1425,6 +1444,10 @@ p {
 
   .lg\:bg-custom-bg-contact {
     background-image: url('/dist/assets/hero_contact_desktop 1.png');
+  }
+
+  .lg\:bg-custom-bg-empresa {
+    background-image: url('/dist/assets/empresa/how_it_works_desktop_02.png');
   }
 
   .lg\:bg-custom-bg-form {
