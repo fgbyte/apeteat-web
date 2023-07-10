@@ -1484,6 +1484,53 @@ p {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.\[\&\>div\]\:flex>div {
+  display: flex;
+}
+
+.\[\&\>div\]\:flex-col>div {
+  flex-direction: column;
+}
+
+.\[\&\>div\]\:items-center>div {
+  align-items: center;
+}
+
+.\[\&\>div\]\:justify-center>div {
+  justify-content: center;
+}
+
+.\[\&\>div\]\:gap-3>div {
+  gap: 0.75rem;
+}
+
+.\[\&\>div\]\:bg-verde>div {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 208 182 / var(--tw-bg-opacity));
+}
+
+.\[\&\>div\]\:p-5>div {
+  padding: 1.25rem;
+}
+
+@media (min-width: 976px) {
+  .\[\&\>div\]\:lg\:h-72>div {
+    height: 18rem;
+  }
+
+  .\[\&\>div\]\:lg\:w-80>div {
+    width: 20rem;
+  }
+
+  .\[\&\>div\]\:lg\:justify-center>div {
+    justify-content: center;
+  }
+
+  .\[\&\>div\]\:lg\:p-10>div {
+    padding: 2.5rem;
+  }
+}
+
 .\[\&\>input\]\:h-10>input {
   height: 2.5rem;
 }
