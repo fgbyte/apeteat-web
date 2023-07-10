@@ -672,6 +672,22 @@ p {
   margin-top: auto;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -702,6 +718,10 @@ p {
 
 .h-\[3px\] {
   height: 3px;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .max-h-28 {
@@ -749,8 +769,24 @@ p {
   width: 100vw;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-\[97\%\] {
+  min-width: 97%;
+}
+
+.min-w-\[95\%\] {
+  min-width: 95%;
+}
+
+.min-w-\[93\%\] {
+  min-width: 93%;
 }
 
 .max-w-7xl {
@@ -1026,10 +1062,6 @@ p {
   padding: 5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -1121,6 +1153,10 @@ p {
   padding-top: 1rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1210,6 +1246,10 @@ p {
 }
 
 @media (min-width: 480px) {
+  .sm\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1285,10 +1325,6 @@ p {
     display: none;
   }
 
-  .lg\:h-72 {
-    height: 18rem;
-  }
-
   .lg\:h-\[14\.62025rem\;\] {
     height: 14.62025rem;;
   }
@@ -1311,10 +1347,6 @@ p {
 
   .lg\:w-52 {
     width: 13rem;
-  }
-
-  .lg\:w-80 {
-    width: 20rem;
   }
 
   .lg\:w-\[18\.75rem\] {
@@ -1406,14 +1438,14 @@ p {
     justify-self: end;
   }
 
-  .lg\:bg-verde {
-    --tw-bg-opacity: 1;
-    background-color: rgb(3 208 182 / var(--tw-bg-opacity));
-  }
-
   .lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-\[\#f5f5f5\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
   }
 
   .lg\:bg-custom-bg {
@@ -1432,10 +1464,6 @@ p {
     background-image: url('/dist/assets/home/img_contact_form 1.png');
   }
 
-  .lg\:p-10 {
-    padding: 2.5rem;
-  }
-
   .lg\:p-12 {
     padding: 3rem;
   }
@@ -1447,6 +1475,10 @@ p {
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:text-center {
+    text-align: center;
   }
 
   .lg\:text-white {
@@ -1494,10 +1526,6 @@ p {
 
 .\[\&\>div\]\:items-center>div {
   align-items: center;
-}
-
-.\[\&\>div\]\:justify-center>div {
-  justify-content: center;
 }
 
 .\[\&\>div\]\:gap-3>div {
