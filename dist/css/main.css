@@ -628,6 +628,11 @@ p {
   margin-bottom: 5rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1298,6 +1303,10 @@ p {
 }
 
 @media (min-width: 976px) {
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1313,8 +1322,17 @@ p {
     margin-right: auto;
   }
 
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .lg\:mr-0 {
+    margin-right: 0px;
   }
 
   .lg\:flex {
@@ -1434,6 +1452,10 @@ p {
     align-self: flex-start;
   }
 
+  .lg\:self-center {
+    align-self: center;
+  }
+
   .lg\:justify-self-end {
     justify-self: end;
   }
@@ -1514,6 +1536,16 @@ p {
 .active\:\[\&\>button\]\:text-gray-300>button:active {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.\[\&\>div\]\:mx-2>div {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.\[\&\>div\]\:mx-3>div {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .\[\&\>div\]\:flex>div {
