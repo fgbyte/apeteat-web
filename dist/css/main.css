@@ -1568,6 +1568,11 @@ p {
 }
 
 @media (min-width: 976px) {
+  .lg\:\[\&\>div\]\:mx-0>div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .\[\&\>div\]\:lg\:h-72>div {
     height: 18rem;
   }
