@@ -14,80 +14,152 @@
 </head>
 
 <body>
-    <!-- Seccion contact -->
-    <section class="lg:bg-custom-bg-contact relative flex bg-cover py-8 " id="contact-hero">
-        <div class="relative flex items-center flex-col flex-1 gap-3">
-            <div class="relative flex md:items-center flex-col gap-3">
-                <h1 class="mx-2 lg:self-stretch max-w-[36rem]">
-                    ¡Ponte en contacto!
-                </h1>
-
-                <img class="relative lg:hidden inset-0" src="./assets/hero_contact_desktop 1.png" alt="contact_image" />
-
-                <p class="mx-2 max-w-[36rem]">
-                    Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac
-                    blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
-                    et lacinia ipsum quam nec dui.
-                </p>
+    <!-- Navbar -->
+    <nav class="max-w-[80rem] mx-auto inset-x-0 top-0 py-2 font-medium">
+        <div class="flex gap-2 justify-between items-center mx-3">
+          <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
+          <div
+            class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
+          >
+            <a>La empresa</a>
+            <a>¿Cómo funciona?</a>
+            <a>Regístrate</a>
+            <a>Contacto</a>
+            <button
+              class="rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+            >
+              93 123 45 67
+            </button>
+            <div
+              class="hover:[&>button]:text-verde active:[&>button]:text-gray-300"
+              name="lenguaje"
+              id="lenguaje"
+            >
+              <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
             </div>
-
-            <form
-                class="flex flex-col gap-3 mx-2 max-w-full lg:max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white">
-                <div class="flex flex-col gap-2" id="numero-de-trabajadores">
-                    <label class="font-bold">Número de trabajadores</label>
-                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
-                        <label class="flex gap-2 items-center">
-                            <input type="radio" name="num-trabajadores" value="menos-de-10" />
-                            <span>menos de 10</span>
-                        </label>
-                        <label class="flex gap-2 items-center">
-                            <input type="radio" name="num-trabajadores" value="10-a-50" />
-                            <span>10 a 50</span>
-                        </label>
-                        <label class="flex gap-2 items-center">
-                            <input type="radio" name="num-trabajadores" value="mas-de-50" />
-                            <span>más de 50</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal">
-                    <label class="w-full font-bold" for="">Persona de Contacto
-                        <input type="text" />
-                    </label>
-                    <label class="w-full font-bold" for="">Nombre Empresa
-                        <input type="text" />
-                    </label>
-                </div>
-
-                <div
-                    class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal">
-                    <label class="w-full font-bold" for="">E-mail
-                        <input type="email" />
-                    </label>
-                    <label class="w-full font-bold" for="">Teléfono
-                        <input type="text" />
-                    </label>
-                </div>
-
-                <div class="flex flex-col">
-                    <label class="">Consulta</label>
-                    <textarea class="max-h-28 h-28 rounded-md px-2 text-black"></textarea>
-                </div>
-
-                <div class="flex items-center gap-2">
-                    <input id="políticas de privacidad" type="checkbox" />
-                    <label for="políticas de privacidad">Acepto las políticas de privacidad</label>
-                </div>
-
-                <button class="w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
-                    Enviar
-                </button>
-            </form>
+          </div>
+          <!-- Navbar Mobile-->
+          <div class="lg:hidden flex items-center justify-center gap-4">
+          <button
+            class="flex justify-self-end rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+          >
+            93 123 45 67
+          </button>
+          <button id="menu-toggle" class="flex flex-col gap-1">
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+          </button>
+        </div>
+        </div>
+        <!-- Menu abierto -->
+        <div id="menu-items" class="hidden lg:hidden relative mt-2 text-center">
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >La empresa</a
+          >
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >¿Cómo funciona?</a
+          >
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >Regístrate</a
+          >
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#"
+            >Contacto</a
+          >
+          <div
+            class="px-4 py-2 hover:[&>button]:text-verde active:[&>button]:text-gray-300"
+          >
+            <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+          </div>
+        </div>
+      </nav>
+    <!-- Seccion contact -->
+    <section class="lg:min-h-screen lg:bg-custom-bg-contact relative bg-cover py-16" id="contact-hero">
+        <div class="relative m-auto flex max-w-7xl">
+        <div class=" relative flex flex-col items-start justify-center  flex-1 gap-3">
+          <h1 class="mx-2 max-w-[38rem]">
+            ¡Ponte en contacto!
+          </h1>
+  
+          <img class="relative lg:hidden inset-0" src="./assets/hero_contact_desktop 1.png" alt="hero_contact_desktop"/>
+  
+          <p class="mx-2 max-w-[38rem]">
+            Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.
+          </p>
+  
+          <form class="flex flex-col gap-3 mx-2 max-w-full lg:max-w-[38rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white" >
+            <div class="flex flex-col gap-2" id="numero-de-trabajadores">
+              <label class="font-bold">Número de trabajadorxs</label>
+              <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
+                <label class="flex gap-2 items-center">
+                  <input
+                    type="radio"
+                    name="num-trabajadores"
+                    value="menos-de-10"
+                  />
+                  <span>menos de 10</span>
+                </label>
+                <label class="flex gap-2 items-center">
+                  <input type="radio" name="num-trabajadores" value="10-a-50" />
+                  <span>10 a 50</span>
+                </label>
+                <label class="flex gap-2 items-center">
+                  <input type="radio" name="num-trabajadores" value="mas-de-50" />
+                  <span>más de 50</span>
+                </label>
+              </div>
+            </div>
+  
+            <div
+              class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal"
+            >
+              <label class="w-full font-bold" for=""
+                >Persona de Contacto
+                <input type="text" />
+              </label>
+              <label class="w-full font-bold" for=""
+                >Nombre Empresa
+                <input type="text" />
+              </label>
+            </div>
+  
+            <div
+              class="flex flex-col sm:flex-row gap-4 [&>label>input]:text-black [&>label>input]:px-2 [&>label>input]:w-full [&>label>input]:h-10 [&>label>input]:rounded-md [&>label>input]:font-normal"
+            >
+              <label class="w-full font-bold" for=""
+                >E-mail
+                <input type="email" />
+              </label>
+              <label class="w-full font-bold" for=""
+                >Teléfono
+                <input type="text" />
+              </label>
+            </div>
+  
+            <div class="flex flex-col">
+              <label class="">Consulta</label>
+              <textarea
+                class="max-h-28 h-28 rounded-md px-2 text-black"
+              ></textarea>
+            </div>
+  
+            <div class="flex items-center gap-2">
+              <input id="políticas de privacidad" type="checkbox" />
+              <label for="políticas de privacidad"
+                >Acepto las políticas de privacidad</label
+              >
+            </div>
+  
+            <button
+              class="w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white"
+            >
+              Enviar
+            </button>
+          </form>
         </div>
         <div class="hidden lg:flex flex-[0.60]"></div>
-    </section>
+      </div>
+      </section>
     <!-- Cards -->
     <section id="contact-cards" class="my-20 py-8">
         <div
@@ -125,8 +197,44 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <!-- Footer section -->
+    <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
+        <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
+          <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
+            <img src="./assets/footer/google_startups.svg"alt="google_startups"/>
+            <img src="./assets/footer/icon_enisa.ac9e39e.svg"alt="icon_enisa.ac9e39e"/>
+            <img src="./assets/footer/lanzadera.png" alt="lanzadera" />
+          </div>
+          <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row"  >
+            <img src="./assets/footer/kitdigital-logos 4.svg"  alt="kitdigital-logos" />
+            <img src="./assets/footer/kitdigital-logos 2.svg" alt="kitdigital-logos" />
+            <img src="./assets/footer/kitdigital-logos 3.svg" alt="kitdigital-logos"/>
+          </div>
+          <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2" >
+            <img class="h-10" src="./assets/apeteat_logo 1.svg"  alt="kitdigital-logos"/>
+            <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
+              <a><img src="./assets/footer/brand-instagram.svg" alt="instagram" /></a>
+              <a><img src="./assets/footer/brand-linkedin.svg" alt="linkedin" /></a>
+            </div>
+          </div>
+          <div class="h-[3px] w-full rounded-lg bg-slate-300">
+            <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
+              <a href="">Política de Cookies Aviso Legal</a> |
+              <a href="">Política de Privacidad</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Logica del menu de navegacion -->
+      <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menuItems = document.getElementById("menu-items");
+  
+        menuToggle.addEventListener("click", () => {
+          menuItems.classList.toggle("hidden");
+        });
+      </script>
 
 </body>
 
