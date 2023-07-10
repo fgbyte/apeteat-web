@@ -338,7 +338,6 @@
       // Eventos
       control1.addEventListener('click', () => {
         carousel.scroll({ left:0, behavior: 'smooth' });
-        control1.classList.remove("bg-gray-600");
         control2.classList.remove("bg-gray-600");
         control3.classList.remove("bg-gray-600");
         control1.classList.add("bg-gray-600");
@@ -347,7 +346,6 @@
       control2.addEventListener('click', () => {
         carousel.scroll({ left: carousel.offsetWidth, behavior: 'smooth' });
         control1.classList.remove("bg-gray-600");
-        control2.classList.remove("bg-gray-600");
         control3.classList.remove("bg-gray-600");
         control2.classList.add("bg-gray-600");
       });
@@ -356,7 +354,6 @@
         carousel.scroll({ left: carousel.offsetWidth * 2, behavior: 'smooth' });
         control1.classList.remove("bg-gray-600");
         control2.classList.remove("bg-gray-600");
-        control3.classList.remove("bg-gray-600");
         control3.classList.add("bg-gray-600");
       });
       // Nuevo evento para captar el scroll
