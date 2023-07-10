@@ -13,8 +13,8 @@
   </head>
 
   <body>
-    <nav class="max-w-[120rem] mx-auto inset-x-0 top-0 py-2 font-medium">
-      <div class="flex gap-2 justify-evenly md:justify-around items-center">
+    <nav class="max-w-[80rem] mx-auto inset-x-0 top-0 py-2 font-medium">
+      <div class="flex gap-2 justify-between items-center mx-3">
         <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
         <div
           class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
@@ -284,7 +284,48 @@
       });
     </script>
     <!-- Nuestros clientes recomiendan -->
-     
+
+    <section class="relative py-16 bg-grisFondo flex flex-col justify-center items-center">
+      <h2 class="pb-16 px-2">Nuestros clientes recomiendan</h2>
+      <div id="carrusel" class="snap-x flex gap-6 min-w-fit [&>div]:min-w-[300px]">
+        <div id="card-1" class="snap-center flex flex-col gap-2 bg-white max-w-[408px] rounded-md p-9 border border-solid border-verde">
+          <div class="flex gap-2 justify-start items-center">
+            <img src="./assets//home/image 2.png" alt="image">
+            <div>
+              <p>Alfredo Punzón</p>
+              <p>EMEA Retail Analyst</p>
+            </div>           
+          </div>
+          <p class="italic">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
+        </div>
+        <div id="card-2" class="snap-center flex flex-col gap-2 bg-white max-w-[408px] rounded-md p-9 border border-solid border-verde">
+          <div class="flex gap-2 justify-start items-center">
+            <img src="./assets//home/teamleader 1.png" alt="image">
+            <div>
+              <p>Pablo Martínez</p>
+              <p>Sales Talent</p>
+            </div>           
+          </div>
+          <p class="italic">"El almuerzo se había convertido en un problema en nuestra oficina y ApetEat nos dio la solución para que todos nuestros empleados comiesen sano a diario. ¡Un acierto!”</p>
+        </div>
+        <div id="card-3" class="snap-center flex flex-col gap-2 bg-white max-w-[408px] rounded-md p-9 border border-solid border-verde">
+          <div class="flex gap-2 justify-start items-center">
+            <img src="./assets//home/idealista 1.png" alt="image">
+            <div>
+              <p><b>Alfredo Punzón</b></p>
+              <p>EMEA Retail Analyst</p>
+            </div>           
+          </div>
+          <p class="italic">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
+        </div>
+      </div>
+     <div id="controles" class="flex gap-2 mt-4">
+      <div>card1</div>
+      <div>card2</div>
+      <div>card3</div>
+     </div>
+    </section>
+
     <!-- Un servicio para todas las empresas -->
     <section class="flex flex-col justify-center items-center py-16">
         <div class="max-w-[870px] flex flex-col gap-6 mx-2">
