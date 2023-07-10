@@ -592,6 +592,11 @@ p {
   margin-right: 0.5rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -605,11 +610,6 @@ p {
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mb-4 {
@@ -697,6 +697,14 @@ p {
   width: 100%;
 }
 
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-\[100rem\] {
+  max-width: 100rem;
+}
+
 .max-w-\[120rem\] {
   max-width: 120rem;
 }
@@ -709,24 +717,16 @@ p {
   max-width: 36rem;
 }
 
+.max-w-\[80rem\] {
+  max-width: 80rem;
+}
+
 .max-w-\[870px\] {
   max-width: 870px;
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-7xl {
-  max-width: 80rem;
-}
-
-.max-w-\[100rem\] {
-  max-width: 100rem;
-}
-
-.max-w-\[80rem\] {
-  max-width: 80rem;
 }
 
 .flex-1 {
@@ -789,8 +789,16 @@ p {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .gap-3 {
@@ -807,14 +815,6 @@ p {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .gap-x-4 {
@@ -852,6 +852,11 @@ p {
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#f5f5f5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -872,11 +877,6 @@ p {
   background-color: rgb(3 208 182 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f5f5f5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
@@ -889,16 +889,16 @@ p {
   padding: 2.5rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .px-10 {
@@ -1095,6 +1095,10 @@ p {
     height: 30rem;
   }
 
+  .lg\:h-\[32rem\] {
+    height: 32rem;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh;
   }
@@ -1127,12 +1131,20 @@ p {
     flex-direction: row-reverse;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
 
   .lg\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .lg\:gap-3 {
+    gap: 0.75rem;
   }
 
   .lg\:gap-44 {
@@ -1175,6 +1187,10 @@ p {
 
   .lg\:p-10 {
     padding: 2.5rem;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
   }
 
   .lg\:px-20 {
@@ -1245,6 +1261,10 @@ p {
 
 .\[\&\>li\>img\]\:inline>li>img {
   display: inline;
+}
+
+.\[\&\>li\]\:flex>li {
+  display: flex;
 }
 
 .\[\&\>li\]\:text-lg>li {
