@@ -2,57 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apeteat</title>
-    <link rel="stylesheet" href="css/main.css">
-    <!-- Fonts -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apeteat</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+  </style>
 </head>
 
 <body>
-
-      <!-- ¿Ganas de comer con ApetEat? -->
-      <section class="flex flex-col justify-center items-center py-16 gap-20" id="Somos-Apeteat" >
-        <div class="flex flex-col gap-20 justify-center items-center max-w-[80rem]">
-            <div class="flex flex-col lg:flex-row mx-2" >
-                <img class="w-full lg:w-auto lg:h-[32rem]" src="./assets/img/referal-desktop-1.webp" alt="Imagen de ejemplo">
-                <div class="flex flex-col gap-2 lg:gap-3 justify-center items-center lg:items-start lg:p-12">
-                  <h3>¿Ganas de comer con ApetEat?</h3>
-                  <p class="text-2xl">¿Hablamos con RRHH para llegar a un acuerdo beneficioso para vosotrxs?</p>
-                  <p>Si eres empresa, debes registrarla para acceder a las tarifas especiales que ofrecemos para empresas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dolor a nibh pharetra maximus. Aenean sollicitudin, ex ac convallis dapibus, augue ex tempor velit, vitae malesuada metus massa at est.</p>
-                  <ul id="Cantina Basic" class="flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2 [&>li]:flex">         
-                    <li><img src="./assets/icon_check 1.svg" alt="icon">Lorem ipsum dolor sit amet, consectetur adipiscing</li>     
-                    <li><img src="./assets/icon_check 1.svg" alt="icon">Lorem ipsum dolor sit amet</li>
-                    <li><img src="./assets/icon_check 1.svg" alt="icon">Dolor sit amet, consectetur adipiscing</li>     
-                   </ul>
-                  <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
-                    Pide más información
-                  </button>
-                </div>
-            </div>
-        </div>
-      </section>
-      <!-- ¿Eres empleado y ya tenemos un acuerdo con tu empresa? -->
-      <section class="flex flex-col justify-center items-center py-16 gap-6">
-        <div class="max-w-[870px] mx-2 flex flex-col gap-4">
-          <h3 class="text-center ">¿Eres empleado y ya tenemos un acuerdo con tu empresa?</h3>
-          <p class="text-center text-2xl leading-30">En este caso, debes solicitar el enlace para registrarte y disfrutar de vuestras condiciones especiales. </p>
-          <p class="text-center text-2xl leading-30">También puedes crear tu cuenta personal y hacer tu pedido, sin que tu empresa esté registrada (se podrá hacer más adelante en cualquier momento).</p>
-        </div>
-        <div class="flex flex-col lg:flex-row justify-center items-center gap-4 ">
-          <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
-            Haz tu pedido
+  <!-- Navbar -->
+  <nav class="sticky bg-white z-50 mx-auto inset-x-0 top-0 py-2 font-medium ">
+    <div class="mx-3">
+      <div class="flex gap-2 justify-between items-center mx-auto max-w-[80rem]">
+        <a href="./">
+          <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
+        </a>
+        <div class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde">
+          <a href="./la-empresa.html">La empresa</a>
+          <a href="./como-funciona.html">¿Cómo funciona?</a>
+          <a href="./registrate.html">Regístrate</a>
+          <a href="./contacto.html">Contacto</a>
+          <button class="rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+            93 123 45 67
           </button>
-          <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
-            Crea tu cuenta ( menos de 1 min)
+          <div class="hover:[&>button]:text-verde active:[&>button]:text-gray-300" name="lenguaje" id="lenguaje">
+            <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+          </div>
+        </div>
+        <!-- Navbar Mobile-->
+        <div class="lg:hidden flex items-center justify-center gap-4">
+          <button class="flex justify-self-end rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+            93 123 45 67
           </button>
-        </div>     
-      </section>
+          <button id="menu-toggle" class="flex flex-col gap-1">
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+            <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+          </button>
+        </div>
+      </div>
+      <!-- Menu abierto -->
+      <div id="menu-items" class="hidden lg:hidden relative mt-2 text-center">
+        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./la-empresa.html">La empresa</a>
+        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./como-funciona.html">¿Cómo funciona?</a>
+        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./registrate.html">Regístrate</a>
+        <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./contacto.html">Contacto</a>
+        <div class="px-4 py-2 hover:[&>button]:text-verde active:[&>button]:text-gray-300">
+          <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ¿Ganas de comer con ApetEat? -->
+  <section class="flex flex-col justify-center items-center py-16 gap-20" id="Somos-Apeteat">
+    <div class="flex flex-col gap-20 justify-center items-center max-w-[80rem]">
+      <div class="flex flex-col lg:flex-row mx-2">
+        <img class="w-full lg:w-auto lg:h-[32rem]" src="./assets/img/referal-desktop-1.webp" alt="Imagen de ejemplo">
+        <div class="flex flex-col gap-2 lg:gap-3 justify-center items-center lg:items-start lg:p-12">
+          <h3>¿Ganas de comer con ApetEat?</h3>
+          <p class="text-2xl">¿Hablamos con RRHH para llegar a un acuerdo beneficioso para vosotrxs?</p>
+          <p>Si eres empresa, debes registrarla para acceder a las tarifas especiales que ofrecemos para empresas. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut dolor a nibh pharetra maximus. Aenean
+            sollicitudin, ex ac convallis dapibus, augue ex tempor velit, vitae malesuada metus massa at est.</p>
+          <ul id="Cantina Basic"
+            class="flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2 [&>li]:flex">
+            <li><img src="./assets/icon_check 1.svg" alt="icon">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+            <li><img src="./assets/icon_check 1.svg" alt="icon">Lorem ipsum dolor sit amet</li>
+            <li><img src="./assets/icon_check 1.svg" alt="icon">Dolor sit amet, consectetur adipiscing</li>
+          </ul>
+          <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+            Pide más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ¿Eres empleado y ya tenemos un acuerdo con tu empresa? -->
+  <section class="flex flex-col justify-center items-center py-16 gap-6">
+    <div class="max-w-[870px] mx-2 flex flex-col gap-4">
+      <h3 class="text-center ">¿Eres empleado y ya tenemos un acuerdo con tu empresa?</h3>
+      <p class="text-center text-2xl leading-30">En este caso, debes solicitar el enlace para registrarte y disfrutar de
+        vuestras condiciones especiales. </p>
+      <p class="text-center text-2xl leading-30">También puedes crear tu cuenta personal y hacer tu pedido, sin que tu
+        empresa esté registrada (se podrá hacer más adelante en cualquier momento).</p>
+    </div>
+    <div class="flex flex-col lg:flex-row justify-center items-center gap-4 ">
+      <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+        Haz tu pedido
+      </button>
+      <button class=" w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+        Crea tu cuenta ( menos de 1 min)
+      </button>
+    </div>
+  </section>
+  <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
+    <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
+      <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
+        <img src="./assets/google_startups.svg" alt="google_startups" />
+        <img src="./assets/icon_enisa.ac9e39e.svg" alt="icon_enisa.ac9e39e" />
+        <img src="./assets/lanzadera.png" alt="lanzadera" />
+      </div>
+      <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row">
+        <img src="./assets/kitdigital-logos 4.svg" alt="kitdigital-logos" />
+        <img src="./assets/kitdigital-logos 2.svg" alt="kitdigital-logos" />
+        <img src="./assets/kitdigital-logos 3.svg" alt="kitdigital-logos" />
+      </div>
+      <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2">
+        <a href="./">
+          <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="kitdigital-logos" />
+        </a>
+        <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
+          <a><img src="./assets/brand-instagram.svg" alt="instagram" /></a>
+          <a><img src="./assets/brand-linkedin.svg" alt="linkedin" /></a>
+        </div>
+      </div>
+      <div class="h-[3px] w-full rounded-lg bg-slate-300">
+        <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
+          <a href="">Política de Cookies Aviso Legal</a> |
+          <a href="">Política de Privacidad</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Logica del menu de navegacion -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuItems = document.getElementById("menu-items");
 
+    menuToggle.addEventListener("click", () => {
+      menuItems.classList.toggle("hidden");
+    });
+  </script>
 </body>
 
 </html>

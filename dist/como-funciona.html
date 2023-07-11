@@ -14,6 +14,51 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="sticky bg-white z-50 mx-auto inset-x-0 top-0 py-2 font-medium ">
+        <div class="mx-3">
+            <div class="flex gap-2 justify-between items-center mx-auto max-w-[80rem]">
+                <a href="./">
+                    <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
+                </a>
+                <div class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde">
+                    <a href="./la-empresa.html">La empresa</a>
+                    <a href="./como-funciona.html">¿Cómo funciona?</a>
+                    <a href="./registrate.html">Regístrate</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <button class="rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+                        93 123 45 67
+                    </button>
+                    <div class="hover:[&>button]:text-verde active:[&>button]:text-gray-300" name="lenguaje"
+                        id="lenguaje">
+                        <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+                    </div>
+                </div>
+                <!-- Navbar Mobile-->
+                <div class="lg:hidden flex items-center justify-center gap-4">
+                    <button class="flex justify-self-end rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+                        93 123 45 67
+                    </button>
+                    <button id="menu-toggle" class="flex flex-col gap-1">
+                        <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+                        <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+                        <div class="h-[3px] w-6 bg-[#00CFB5]"></div>
+                    </button>
+                </div>
+            </div>
+            <!-- Menu abierto -->
+            <div id="menu-items" class="hidden lg:hidden relative mt-2 text-center">
+                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./la-empresa.html">La empresa</a>
+                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./como-funciona.html">¿Cómo
+                    funciona?</a>
+                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./registrate.html">Regístrate</a>
+                <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./contacto.html">Contacto</a>
+                <div class="px-4 py-2 hover:[&>button]:text-verde active:[&>button]:text-gray-300">
+                    <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- Hero -->
     <section class="lg:bg-custom-bg-como-funciona relative flex bg-cover py-8" id="contact-hero">
         <div class="relative flex items-center flex-col flex-1 gap-3">
@@ -22,7 +67,8 @@
                     ¿En la oficina? ¿Teletrabajando?
                 </h1>
 
-                <img class="relative lg:hidden inset-0" src="./assets/img/our-food-desktop-01-1.webp" alt="contact_image" />
+                <img class="relative lg:hidden inset-0" src="./assets/img/our-food-desktop-01-1.webp"
+                    alt="contact_image" />
 
                 <p class="mx-2 max-w-[36rem] lg:text-white">
                     No te preocupes de nada, nos encargamos de todo.¡Hola comodidad, hola tiempo!
@@ -168,8 +214,7 @@
     <section class="py-5 px-2 bg-[#f5f5f5] mt-32">
         <div class="py-5 px-20  flex flex-col items-center lg:flex-row lg:justify-center gap-10">
             <div class="lg:mt-10">
-                <img class="lg:w-[25rem]"
-                    src="./assets/img/tando-bolsa-con-comida-para-llevar-1.webp" alt="">
+                <img class="lg:w-[25rem]" src="./assets/img/tando-bolsa-con-comida-para-llevar-1.webp" alt="">
             </div>
             <form action="">
                 <div class="flex flex-col gap-3 lg:w-[20rem]">
@@ -197,7 +242,8 @@
                 <img class="w-44 lg:w-52" src="./assets/icon_calendar 1.svg" alt="">
                 <div class="flex flex-col gap-y-4 lg:w-[28rem] items-center">
                     <h3>Cambiamos la carta cada semana</h3>
-                    <p class="destaque text-center lg:text-start">Cada 5 días cambiamos todos los platos de nuestra carta. Así es como hacemos que
+                    <p class="destaque text-center lg:text-start">Cada 5 días cambiamos todos los platos de nuestra
+                        carta. Así es como hacemos que
                         ApetEat sea el complemento perfecto para una dieta variada y equilibrada.</p>
                     <button
                         class="self-center lg:self-start w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
@@ -207,7 +253,45 @@
             </div>
         </div>
     </section>
+    <!-- Footer -->
+    <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
+        <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
+            <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
+                <img src="./assets/google_startups.svg" alt="google_startups" />
+                <img src="./assets/icon_enisa.ac9e39e.svg" alt="icon_enisa.ac9e39e" />
+                <img src="./assets/lanzadera.png" alt="lanzadera" />
+            </div>
+            <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row">
+                <img src="./assets/kitdigital-logos 4.svg" alt="kitdigital-logos" />
+                <img src="./assets/kitdigital-logos 2.svg" alt="kitdigital-logos" />
+                <img src="./assets/kitdigital-logos 3.svg" alt="kitdigital-logos" />
+            </div>
+            <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2">
+                <a href="./">
+                    <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="kitdigital-logos" />
+                </a>
+                <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
+                    <a><img src="./assets/brand-instagram.svg" alt="instagram" /></a>
+                    <a><img src="./assets/brand-linkedin.svg" alt="linkedin" /></a>
+                </div>
+            </div>
+            <div class="h-[3px] w-full rounded-lg bg-slate-300">
+                <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
+                    <a href="">Política de Cookies Aviso Legal</a> |
+                    <a href="">Política de Privacidad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Logica del menu de navegacion -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menuItems = document.getElementById("menu-items");
 
+        menuToggle.addEventListener("click", () => {
+            menuItems.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
