@@ -15,8 +15,9 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="max-w-[120rem] mx-auto inset-x-0 top-0 py-2 font-medium">
-      <div class="flex gap-2 justify-evenly md:justify-around items-center">
+    <nav class="sticky bg-white z-50 mx-auto inset-x-0 top-0 py-2 font-medium ">
+      <div class="mx-3">
+      <div class="flex gap-2 justify-between items-center mx-auto max-w-[80rem]">
         <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
         <div
           class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
@@ -72,6 +73,7 @@
           <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
         </div>
       </div>
+    </div>
     </nav>
     <!-- Logica del menu de navegacion -->
     <script>
@@ -87,59 +89,26 @@
 
 
     <!-- Footer -->
-    <footer class="bottom-0 inset-x-0 pt-4 mt-8">
-      <div
-        class="flex flex-col max-w-[120rem] mx-auto justify-center items-center px-4"
-      >
-        <div
-          class="flex flex-col gap-8 justify-center items-center md:flex-row"
-        >
-          <img
-            src="./assets/footer/google_startups.svg"
-            alt="google_startups"
-          />
-          <img
-            src="./assets/footer/icon_enisa.ac9e39e.svg"
-            alt="icon_enisa.ac9e39e"
-          />
-          <img src="./assets/footer/lanzadera.png" alt="lanzadera" />
+    <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
+      <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
+        <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
+          <img src="./assets/google_startups.svg"alt="google_startups"/>
+          <img src="./assets/icon_enisa.ac9e39e.svg"alt="icon_enisa.ac9e39e"/>
+          <img src="./assets/lanzadera.png" alt="lanzadera" />
         </div>
-        <div
-          class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row"
-        >
-          <img
-            src="./assets/footer/kitdigital-logos 4.svg"
-            alt="kitdigital-logos"
-          />
-          <img
-            src="./assets/footer/kitdigital-logos 2.svg"
-            alt="kitdigital-logos"
-          />
-          <img
-            src="./assets/footer/kitdigital-logos 3.svg"
-            alt="kitdigital-logos"
-          />
+        <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row"  >
+          <img src="./assets/kitdigital-logos 4.svg"  alt="kitdigital-logos" />
+          <img src="./assets/kitdigital-logos 2.svg" alt="kitdigital-logos" />
+          <img src="./assets/kitdigital-logos 3.svg" alt="kitdigital-logos"/>
         </div>
-        <div
-          class="w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-around py-2"
-        >
-          <img
-            class="h-10"
-            src="./assets/apeteat_logo 1.svg"
-            alt="kitdigital-logos"
-          />
-          <div
-            class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer"
-          >
-            <a
-              ><img src="./assets/footer/brand-instagram.svg" alt="instagram"
-            /></a>
-            <a
-              ><img src="./assets/footer/brand-linkedin.svg" alt="linkedin"
-            /></a>
+        <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2" >
+          <img class="h-10" src="./assets/apeteat_logo 1.svg"  alt="kitdigital-logos"/>
+          <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
+            <a><img src="./assets/brand-instagram.svg" alt="instagram" /></a>
+            <a><img src="./assets/brand-linkedin.svg" alt="linkedin" /></a>
           </div>
         </div>
-        <div class="h-[3px] w-[90%] rounded-lg bg-slate-300">
+        <div class="h-[3px] w-full rounded-lg bg-slate-300">
           <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
             <a href="">Política de Cookies Aviso Legal</a> |
             <a href="">Política de Privacidad</a>
