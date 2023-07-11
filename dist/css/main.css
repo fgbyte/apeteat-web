@@ -1026,7 +1026,7 @@ p {
 }
 
 .bg-custom-bg-price {
-  background-image: url('/dist/assets/how_menus 1.png');
+  background-image: url('./../assets/img/how-menus-1.webp');
 }
 
 .bg-cover {
@@ -1448,23 +1448,23 @@ p {
   }
 
   .lg\:bg-custom-bg {
-    background-image: url('/dist/assets/companie_desktop_01 1.png');
+    background-image: url('./../assets/img/companie-desktop-01-1.webp');
   }
 
   .lg\:bg-custom-bg-como-funciona {
-    background-image: url('/dist/assets/our_food_desktop_01 1.png');
+    background-image: url('./../assets/img/our-food-desktop-01-1.webp');
   }
 
   .lg\:bg-custom-bg-contact {
-    background-image: url('/dist/assets/hero_contact_desktop 1.png');
+    background-image: url('./../assets/img/hero-contact-desktop-1.webp');
   }
 
   .lg\:bg-custom-bg-empresa {
-    background-image: url('/dist/assets/empresa/how_it_works_desktop_02.png');
+    background-image: url('./../assets/img/how-it-works-desktop-02.webp');
   }
 
   .lg\:bg-custom-bg-form {
-    background-image: url('/dist/assets/home/img_contact_form 1.png');
+    background-image: url('./../assets/img/img-contact-form-1.webp');
   }
 
   .lg\:p-12 {

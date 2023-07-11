@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-bg': "url('/dist/assets/companie_desktop_01 1.png')",
-        'custom-bg-contact': "url('/dist/assets/hero_contact_desktop 1.png')",
-        'custom-bg-empresa': "url('/dist/assets/empresa/how_it_works_desktop_02.png')",
-        'custom-bg-form': "url('/dist/assets/home/img_contact_form 1.png')",
-        'custom-bg-como-funciona': "url('/dist/assets/our_food_desktop_01 1.png')",
-        'custom-bg-price': "url('/dist/assets/how_menus 1.png')",
+        'custom-bg': "url('./../assets/img/companie-desktop-01-1.webp')",
+        'custom-bg-form': "url('./../assets/img/img-contact-form-1.webp')",
+        'custom-bg-contact': "url('./../assets/img/hero-contact-desktop-1.webp')",
+        'custom-bg-empresa': "url('./../assets/img/how-it-works-desktop-02.webp')",
+        'custom-bg-como-funciona': "url('./../assets/img/our-food-desktop-01-1.webp')",
+        'custom-bg-price': "url('./../assets/img/how-menus-1.webp')",
       },
       screens: {
         sm: '480px',

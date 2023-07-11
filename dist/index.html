@@ -81,7 +81,7 @@
           ¿Pregunta clave para los Buyer Personas?
         </h1>
 
-        <img class="relative lg:hidden inset-0"src="./assets/companie_desktop_01 1.png" alt="companie_desktop"/>
+        <img class="relative lg:hidden inset-0"src="./assets/img/companie-desktop-01-1.webp" alt="companie_desktop"/>
 
         <p class="mx-2 max-w-[38rem]">
           Ayudamos a <b>miles de empresas de Barcelona y Madrid</b> para
@@ -216,7 +216,7 @@
           <div class="mx-auto flex flex-1 lg:flex-[0.94] flex-col justify-center gap-4 min-h-[495px] [&>ul>li]:flex [&>ul>li]:gap-1">
             <h3 class="lg:hidden mt-6 mx-2">Beneficios para la empresa</h3>
             <ul id="lista-empresa" class="lg:hidden flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2 ">
-              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la captación del talento</li>        
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la captación del talento</li>
               <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la retención del talento</li>
               <li><img src="./assets/icon_check 1.svg" alt="icon">Fomenta el team building</li>
               <li><img src="./assets/icon_check 1.svg" alt="icon">Beneficia la cultura de empresa</li>
@@ -230,7 +230,7 @@
             </ul>
             <h3 class="lg:hidden mt-6 mx-2">Beneficios para lxs empleadxs</h3>
             <ul id="lista-empleados" class="lg:hidden flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2">
-              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la salud y bienestar de los empleados</li>     
+              <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la salud y bienestar de los empleados</li>
               <li><img src="./assets/icon_check 1.svg" alt="icon">Fomenta la creatividad y la innovación</li>
               <li><img src="./assets/icon_check 1.svg" alt="icon">Ayuda a reducir el estrés y la fatiga</li>
               <li><img src="./assets/icon_check 1.svg" alt="icon">Mejora la calidad de vida laboral</li>
@@ -245,20 +245,20 @@
         </div>
       </div>
     </section>
-    
+
     <script>
       const empresaBtn = document.getElementById('empresaBtn');
       const empleadosBtn = document.getElementById('empleadosBtn');
       const listaEmpresa = document.getElementById('lista-empresa');
       const listaEmpleados = document.getElementById('lista-empleados');
-    
+
       // Establecer por defecto la lista de beneficios de la empresa
       empresaBtn.classList.add('bg-verde');
       empleadosBtn.classList.remove('bg-verde');
       listaEmpresa.classList.remove('lg:hidden');
       listaEmpleados.classList.add('lg:hidden');
       empleadosBtn.classList.add('bg-gray-300');
-    
+
       // Manejador de evento click para el botón de la empresa
       empresaBtn.addEventListener('click', () => {
         empresaBtn.classList.remove('bg-gray-300');
@@ -267,9 +267,9 @@
         empleadosBtn.classList.add('bg-gray-300');
         listaEmpresa.classList.remove('lg:hidden');
         listaEmpleados.classList.add('lg:hidden');
-        
+
       });
-    
+
       // Manejador de evento click para el botón de empleados
       empleadosBtn.addEventListener('click', () => {
         empleadosBtn.classList.remove('bg-gray-300');
@@ -288,7 +288,7 @@
       <div id="carrusel" class="snap-proximity snap-x  flex gap-6 lg:min-w-fit w-screen lg:w-auto overflow-x-auto scroll-snap-type-x">
         <div id="card-1" class="ml-4 sm:mr-8 lg:m-0 snap-center min-w-[93%] lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
           <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
-            <img src="./assets//home/image 2.png" alt="image">
+            <img src="./assets/image 2.png" alt="image">
             <div>
               <p><b>Alfredo Punzón</b></p>
               <p>EMEA Retail Analyst</p>
@@ -298,7 +298,7 @@
         </div>
         <div id="card-2" class="snap-center min-w-[93%] lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
           <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
-            <img src="./assets//home/teamleader 1.png" alt="image">
+            <img src="./assets/teamleader 1.png" alt="image">
             <div>
               <p><b>Pablo Martínez</b></p>
               <p>Sales Talent</p>
@@ -308,7 +308,7 @@
         </div>
         <div id="card-3" class="mr-4 sm:mr-8 lg:m-0 snap-center min-w-[93%] lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
           <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
-            <img src="./assets//home/idealista 1.png" alt="image">
+            <img src="./assets/idealista 1.png" alt="image">
             <div>
               <p><b>Alfredo Punzón</b></p>
               <p>EMEA Retail Analyst</p>
@@ -323,18 +323,18 @@
         <div id="control-3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
       </div>
     </section>
-    
+
     <script>
       const carousel = document.getElementById('carrusel');
       const controls = document.getElementById('controles');
       const control1 = document.getElementById('control-1');
       const control2 = document.getElementById('control-2');
       const control3 = document.getElementById('control-3');
-      
+
       // Establecer color por defecto
       carousel.classList.remove("bg-gray-400");
       control1.classList.add("bg-gray-600");
-      
+
       // Eventos
       control1.addEventListener('click', () => {
         carousel.scroll({ left:0, behavior: 'smooth' });
@@ -342,14 +342,14 @@
         control3.classList.remove("bg-gray-600");
         control1.classList.add("bg-gray-600");
       });
-      
+
       control2.addEventListener('click', () => {
         carousel.scroll({ left: carousel.offsetWidth, behavior: 'smooth' });
         control1.classList.remove("bg-gray-600");
         control3.classList.remove("bg-gray-600");
         control2.classList.add("bg-gray-600");
       });
-      
+
       control3.addEventListener('click', () => {
         carousel.scroll({ left: carousel.offsetWidth * 2, behavior: 'smooth' });
         control1.classList.remove("bg-gray-600");
@@ -430,15 +430,15 @@
       <h2 class="text-center py-4 px-2">Algunos de nuestros platos</h2>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto max-w-full [&>div]:mx-2 lg:[&>div]:mx-0">
         <div class="relative">
-          <img class="w-full" src="./assets/home/bowl-noruega.png" alt="bowl-noruega">
+          <img class="w-full" src="./assets/img/bowl-noruega.webp" alt="bowl-noruega">
           <p class="absolute top-0 left-0 px-6 py-6">Bowl Noruega</p>
         </div>
         <div class="relative">
-          <img class="w-full" src="./assets/home/lentejas-con-verduras.png" alt="lentejas-con-verduras">
+          <img class="w-full" src="./assets/img/lentejas-con-verduras.webp" alt="lentejas-con-verduras">
           <p class="absolute top-0 left-0 px-6 py-6">Lentejas estofadas con verduras</p>
         </div>
         <div class="relative">
-          <img class="w-full" src="./assets/home/pechuga-de-pollo-con-pimientos-verdes.png" alt="pechuga-de-pollo-con-pimientos-verdes">
+          <img class="w-full" src="./assets/img/echuga-de-pollo-con-pimientos-verdes.webp" alt="pechuga-de-pollo-con-pimientos-verdes">
           <p class="absolute top-0 left-0 px-6 py-6">Pechuga de pollo con pimientos verdes</p>
         </div>
       </div>
@@ -538,20 +538,20 @@
     <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
       <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
         <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
-          <img src="./assets/footer/google_startups.svg"alt="google_startups"/>
-          <img src="./assets/footer/icon_enisa.ac9e39e.svg"alt="icon_enisa.ac9e39e"/>
-          <img src="./assets/footer/lanzadera.png" alt="lanzadera" />
+          <img src="./assets/google_startups.svg"alt="google_startups"/>
+          <img src="./assets/icon_enisa.ac9e39e.svg"alt="icon_enisa.ac9e39e"/>
+          <img src="./assets/lanzadera.png" alt="lanzadera" />
         </div>
         <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row"  >
-          <img src="./assets/footer/kitdigital-logos 4.svg"  alt="kitdigital-logos" />
-          <img src="./assets/footer/kitdigital-logos 2.svg" alt="kitdigital-logos" />
-          <img src="./assets/footer/kitdigital-logos 3.svg" alt="kitdigital-logos"/>
+          <img src="./assets/kitdigital-logos 4.svg"  alt="kitdigital-logos" />
+          <img src="./assets/kitdigital-logos 2.svg" alt="kitdigital-logos" />
+          <img src="./assets/kitdigital-logos 3.svg" alt="kitdigital-logos"/>
         </div>
         <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2" >
           <img class="h-10" src="./assets/apeteat_logo 1.svg"  alt="kitdigital-logos"/>
           <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
-            <a><img src="./assets/footer/brand-instagram.svg" alt="instagram" /></a>
-            <a><img src="./assets/footer/brand-linkedin.svg" alt="linkedin" /></a>
+            <a><img src="./assets/brand-instagram.svg" alt="instagram" /></a>
+            <a><img src="./assets/brand-linkedin.svg" alt="linkedin" /></a>
           </div>
         </div>
         <div class="h-[3px] w-full rounded-lg bg-slate-300">
