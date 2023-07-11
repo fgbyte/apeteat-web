@@ -568,6 +568,10 @@ p {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -587,6 +591,10 @@ p {
 
 .top-0 {
   top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-auto {
@@ -638,6 +646,18 @@ p {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .mt-16 {
@@ -700,8 +720,8 @@ p {
   height: 7rem;
 }
 
-.h-4 {
-  height: 1rem;
+.h-3 {
+  height: 0.75rem;
 }
 
 .h-\[3px\] {
@@ -716,12 +736,12 @@ p {
   min-height: 495px;
 }
 
-.w-36 {
-  width: 9rem;
+.w-3 {
+  width: 0.75rem;
 }
 
-.w-4 {
-  width: 1rem;
+.w-36 {
+  width: 9rem;
 }
 
 .w-40 {
@@ -753,8 +773,8 @@ p {
   width: 100vw;
 }
 
-.min-w-full {
-  min-width: 100%;
+.min-w-\[93\%\] {
+  min-width: 93%;
 }
 
 .max-w-7xl {
@@ -799,14 +819,6 @@ p {
 
 .flex-\[0\.60\] {
   flex: 0.60;
-}
-
-.flex-\[0\.30\] {
-  flex: 0.30;
-}
-
-.flex-\[0\.20\] {
-  flex: 0.20;
 }
 
 .snap-x {
@@ -990,11 +1002,6 @@ p {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.bg-grisFondo {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -1024,10 +1031,6 @@ p {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .p-10 {
@@ -1125,39 +1128,12 @@ p {
   padding-bottom: 2rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .pt-8 {
@@ -1253,6 +1229,10 @@ p {
 }
 
 @media (min-width: 480px) {
+  .sm\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1305,6 +1285,15 @@ p {
 }
 
 @media (min-width: 976px) {
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -1441,8 +1430,17 @@ p {
     align-self: flex-start;
   }
 
+  .lg\:self-center {
+    align-self: center;
+  }
+
   .lg\:justify-self-end {
     justify-self: end;
+  }
+
+  .lg\:bg-\[\#f5f5f5\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
   }
 
   .lg\:bg-white {
@@ -1488,6 +1486,10 @@ p {
     padding-bottom: 6rem;
   }
 
+  .lg\:text-center {
+    text-align: center;
+  }
+
   .lg\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1523,6 +1525,11 @@ p {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.\[\&\>div\]\:mx-2>div {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .\[\&\>div\]\:flex>div {
   display: flex;
 }
@@ -1548,7 +1555,16 @@ p {
   padding: 1.25rem;
 }
 
+.hover\:\[\&\>div\]\:cursor-pointer>div:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 976px) {
+  .lg\:\[\&\>div\]\:mx-0>div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .\[\&\>div\]\:lg\:h-72>div {
     height: 18rem;
   }

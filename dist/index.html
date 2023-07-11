@@ -13,8 +13,9 @@
   </head>
 
   <body>
-    <nav class="max-w-[80rem] mx-auto inset-x-0 top-0 py-2 font-medium">
-      <div class="flex gap-2 justify-between items-center mx-3">
+    <nav class="sticky bg-white z-50 mx-auto inset-x-0 top-0 py-2 font-medium ">
+      <div class="mx-3">
+      <div class="flex gap-2 justify-between items-center mx-auto max-w-[80rem]">
         <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
         <div
           class="hidden lg:flex gap-2 lg:gap-6 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde"
@@ -70,6 +71,7 @@
           <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
         </div>
       </div>
+    </div>
     </nav>
     <!-- Seccion home -->
     <section class="lg:min-h-screen lg:bg-custom-bg relative bg-cover py-16" id="Home">
@@ -87,7 +89,7 @@
           ser una de ellas?
         </p>
 
-        <form class="flex flex-col gap-3 mx-2 max-w-full lg:max-w-[38rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white" >
+        <form class="flex flex-col gap-3 mx-2 max-w-full lg:max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white" >
           <div class="flex flex-col gap-2" id="numero-de-trabajadores">
             <label class="font-bold">Número de trabajadorxs</label>
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
@@ -281,31 +283,31 @@
     </script>
     <!-- Nuestros clientes recomiendan -->
 
-    <section class="relative py-16 bg-grisFondo flex flex-col justify-center items-center">
-      <h2 class="pb-16 px-2">Nuestros clientes recomiendan</h2>
+    <section class="relative py-16 lg:bg-[#f5f5f5] flex flex-col justify-center items-center">
+      <h2 class="text-center pb-10 px-2">Nuestros clientes recomiendan</h2>
       <div id="carrusel" class="snap-proximity snap-x  flex gap-6 lg:min-w-fit w-screen lg:w-auto overflow-x-auto scroll-snap-type-x">
-        <div id="card-1" class="snap-center min-w-full lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
-          <div class="flex gap-2 justify-start items-center">
+        <div id="card-1" class="ml-4 sm:mr-8 lg:m-0 snap-center min-w-[93%] lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
+          <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
             <img src="./assets//home/image 2.png" alt="image">
             <div>
-              <p>Alfredo Punzón</p>
+              <p><b>Alfredo Punzón</b></p>
               <p>EMEA Retail Analyst</p>
             </div>
           </div>
           <p class="italic lg:max-w-xs">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
         </div>
-        <div id="card-2" class="snap-center min-w-full lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
-          <div class="flex gap-2 justify-start items-center">
+        <div id="card-2" class="snap-center min-w-[93%] lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
+          <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
             <img src="./assets//home/teamleader 1.png" alt="image">
             <div>
-              <p>Pablo Martínez</p>
+              <p><b>Pablo Martínez</b></p>
               <p>Sales Talent</p>
             </div>
           </div>
           <p class="italic lg:max-w-xs">"El almuerzo se había convertido en un problema en nuestra oficina y ApetEat nos dio la solución para que todos nuestros empleados comiesen sano a diario. ¡Un acierto!”</p>
         </div>
-        <div id="card-3" class="snap-center min-w-full lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
-          <div class="flex gap-2 justify-start items-center">
+        <div id="card-3" class="mr-4 sm:mr-8 lg:m-0 snap-center min-w-[93%] lg:min-w-fit flex flex-col gap-2 bg-white rounded-md p-9 border border-solid border-verde">
+          <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
             <img src="./assets//home/idealista 1.png" alt="image">
             <div>
               <p><b>Alfredo Punzón</b></p>
@@ -315,10 +317,10 @@
           <p class="italic lg:max-w-xs">"Un descubrimiento ApetEat, calidad y buen precio van unidos, sano, rapidez en el servicio y variedad de platos, perfecto para la oficina.”</p>
         </div>
       </div>
-      <div id="controles" class="lg:hidden flex gap-6 mt-4">
-        <div id="control-1" class="h-4 w-4 bg-gray-400 rounded-full"></div>
-        <div id="control-2" class="h-4 w-4 bg-gray-400 rounded-full"></div>
-        <div id="control-3" class="h-4 w-4 bg-gray-400 rounded-full"></div>
+      <div id="controles" class="lg:hidden flex gap-8 mt-4 hover:[&>div]:cursor-pointer">
+        <div id="control-1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div id="control-2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div id="control-3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
       </div>
     </section>
     
@@ -328,35 +330,49 @@
       const control1 = document.getElementById('control-1');
       const control2 = document.getElementById('control-2');
       const control3 = document.getElementById('control-3');
-
+      
       // Establecer color por defecto
-       carousel.classList.remove("bg-gray-400")
-       control1.classList.add("bg-gray-600")
-       
+      carousel.classList.remove("bg-gray-400");
+      control1.classList.add("bg-gray-600");
+      
       // Eventos
       control1.addEventListener('click', () => {
         carousel.scroll({ left:0, behavior: 'smooth' });
-        control1.classList.remove("bg-gray-600")
-        control2.classList.remove("bg-gray-600")
-        control3.classList.remove("bg-gray-600")
-        control1.classList.add("bg-gray-600")
-
+        control2.classList.remove("bg-gray-600");
+        control3.classList.remove("bg-gray-600");
+        control1.classList.add("bg-gray-600");
       });
-    
+      
       control2.addEventListener('click', () => {
         carousel.scroll({ left: carousel.offsetWidth, behavior: 'smooth' });
-        control1.classList.remove("bg-gray-600")
-        control2.classList.remove("bg-gray-600")
-        control3.classList.remove("bg-gray-600")
-        control2.classList.add("bg-gray-600")
+        control1.classList.remove("bg-gray-600");
+        control3.classList.remove("bg-gray-600");
+        control2.classList.add("bg-gray-600");
       });
-    
+      
       control3.addEventListener('click', () => {
         carousel.scroll({ left: carousel.offsetWidth * 2, behavior: 'smooth' });
-        control1.classList.remove("bg-gray-600")
-        control2.classList.remove("bg-gray-600")
-        control3.classList.remove("bg-gray-600")
-        control3.classList.add("bg-gray-600")
+        control1.classList.remove("bg-gray-600");
+        control2.classList.remove("bg-gray-600");
+        control3.classList.add("bg-gray-600");
+      });
+      // Nuevo evento para captar el scroll
+      carousel.addEventListener('scroll', () => {
+        const cardWidth = carousel.querySelector('.snap-center').offsetWidth;
+        const scrollPos = carousel.scrollLeft;
+        if (scrollPos < cardWidth / 2) {
+          control1.classList.add("bg-gray-600");
+          control2.classList.remove("bg-gray-600");
+          control3.classList.remove("bg-gray-600");
+        } else if (scrollPos < cardWidth * 1.5) {
+          control2.classList.add("bg-gray-600");
+          control1.classList.remove("bg-gray-600");
+          control3.classList.remove("bg-gray-600");
+        } else {
+          control3.classList.add("bg-gray-600");
+          control1.classList.remove("bg-gray-600");
+          control2.classList.remove("bg-gray-600");
+        }
       });
     </script>
 
@@ -368,7 +384,7 @@
         </div >
           <div class="mt-6 flex flex-col lg:flex-row lg:gap-44 w-full lg:w-auto lg:mx-4">
             <div class=" flex flex-1 flex-col justify-start lg:items-center bg-[#F5F5F5] gap-10 px-2 lg:px-20 py-8  [&>ul>li]:flex [&>ul>li]:gap-1">
-              <h3 class="text-verde text-center">Cantina Basic</h3>
+              <h3 class="text-verde ml-2 lg:text-center">Cantina Basic</h3>
               <ul id="Cantina Basic" class="flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2">         
                <li><img src="./assets/icon_check 1.svg" alt="icon">100% compostable, sin plástico</li>     
                <li><img src="./assets/icon_check 1.svg" alt="icon">100% solidario</li>
@@ -380,12 +396,12 @@
                <li><img src="./assets/icon_check 1.svg" alt="icon">Promociones especiales</li>
                <li><img src="./assets/icon_check 1.svg" alt="icon">Servicio a domicilio (teletrabajo)</li>     
               </ul>
-              <button class="self-center mt-auto w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white" >
+              <button class="mx-2 lg:mx-0 lg:self-center mt-auto w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white" >
                 Pide más infromación
               </button>
             </div>
             <div class="flex flex-1 flex-col justify-start lg:items-center bg-[#F5F5F5] gap-10 px-2 lg:px-20 py-8  [&>ul>li]:flex [&>ul>li]:gap-1">
-              <h3 class="text-verde text-center">Cantina Premium</h3>
+              <h3 class="text-verde  ml-2 lg:text-center">Cantina Premium</h3>
               <ul id="Cantina Basic" class="flex flex-col gap-3 [&>li]:text-lg [&>li]:font-normal [&>li>img]:inline [&>li>img]:mx-2">                                                                                                                                                                           
                <li><img src="./assets/icon_check 1.svg" alt="icon">100% compostable, sin plástico</li>     
                <li><img src="./assets/icon_check 1.svg" alt="icon">100% solidario</li>
@@ -402,7 +418,7 @@
                <li><img src="./assets/icon_check 1.svg" alt="icon">Servicio a domicilio (teletrabajo)</li>     
                <li><img src="./assets/icon_check 1.svg" alt="icon">Precios especiales</li>     
               </ul>
-              <button class="self-center lg:justify-self-end w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white" >
+              <button class="mx-2 lg:mx-0 lg:self-center lg:justify-self-end w-fit rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white" >
                 Pide más infromación
               </button>
             </div>
@@ -412,7 +428,7 @@
     <!-- Algunos de nuestros platos -->
     <section class="relative py-16">
       <h2 class="text-center py-4 px-2">Algunos de nuestros platos</h2>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto max-w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto max-w-full [&>div]:mx-2 lg:[&>div]:mx-0">
         <div class="relative">
           <img class="w-full" src="./assets/home/bowl-noruega.png" alt="bowl-noruega">
           <p class="absolute top-0 left-0 px-6 py-6">Bowl Noruega</p>
