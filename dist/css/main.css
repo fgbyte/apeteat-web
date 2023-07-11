@@ -601,6 +601,11 @@ p {
   margin: auto;
 }
 
+.-mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -614,11 +619,6 @@ p {
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .mx-auto {
@@ -1033,16 +1033,16 @@ p {
   background-size: cover;
 }
 
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .p-6 {
@@ -1247,6 +1247,10 @@ p {
     display: block;
   }
 
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1304,11 +1308,6 @@ p {
     margin-right: 1rem;
   }
 
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1337,10 +1336,6 @@ p {
     min-height: 100vh;
   }
 
-  .lg\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .lg\:w-52 {
     width: 13rem;
   }
@@ -1359,6 +1354,10 @@ p {
 
   .lg\:w-\[28rem\] {
     width: 28rem;
+  }
+
+  .lg\:w-\[65\%\] {
+    width: 65%;
   }
 
   .lg\:w-auto {
@@ -1499,6 +1498,11 @@ p {
 @media (min-width: 1440px) {
   .xl\:gap-16 {
     gap: 4rem;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
