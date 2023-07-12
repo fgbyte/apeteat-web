@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Roboto, sans-serif;
+  font-family: Roboto Condensed, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -424,7 +424,6 @@ video {
 
 h1 {
   color: var(--azul-oscuro-apeteat, #3c475b);
-  font-family: Roboto;
   font-size: 2.8125rem;
   font-style: normal;
   font-weight: 700;
@@ -433,7 +432,6 @@ h1 {
 
 h2 {
   color: var(--azul-oscuro-apeteat, #3c475b);
-  font-family: Roboto;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -443,7 +441,6 @@ h2 {
 
 h3 {
   color: var(--azul-oscuro-apeteat, #3c475b);
-  font-family: Roboto;
   font-size: 2.1875rem;
   font-style: normal;
   font-weight: 700;
@@ -453,11 +450,15 @@ h3 {
 
 p {
   color: var(--azul-oscuro-apeteat, #3c475b);
-  font-family: Roboto;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
+}
+
+.destaque {
+  font-size: 1.4375rem;
+  margin-bottom: 40px;
 }
 
 *, ::before, ::after {
@@ -756,10 +757,6 @@ p {
   width: 1.5rem;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -863,14 +860,6 @@ p {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-1 {
@@ -1158,10 +1147,6 @@ p {
   line-height: 2.25rem;
 }
 
-.text-destaque {
-  font-size: 1.5625rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1261,10 +1246,6 @@ p {
 
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
   }
 
   .md\:gap-10 {

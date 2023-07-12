@@ -23,15 +23,8 @@ module.exports = {
         verde: '#03D0B6',
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        sans: ['Roboto Condensed', 'sans-serif'],
       },
-      fontSize: {
-        'h1': '2.8125rem',
-        'h2': '2.5rem',
-        'h3': '2.1875rem',
-        'base': '1rem',
-        'destaque': '1.5625rem',
-      }
     },
   },
   plugins: [],
