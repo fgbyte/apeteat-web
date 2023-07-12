@@ -1333,6 +1333,10 @@ p {
     margin-top: 2.5rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1697,6 +1701,11 @@ p {
 
 .\[\&\>li\>img\]\:inline>li>img {
   display: inline;
+}
+
+.\[\&\>li\]\:mx-2>li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .\[\&\>li\]\:flex>li {
