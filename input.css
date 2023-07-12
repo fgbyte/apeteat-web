@@ -9,6 +9,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 3.125rem;
+    /* margin-bottom: 1.0625rem; */
   }
 
   h2 {
@@ -39,7 +40,8 @@
 
   .destaque {
     font-size: 1.4375rem;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
+    line-height: 1.75rem;
   }
 }
 #carrusel::-webkit-scrollbar {
