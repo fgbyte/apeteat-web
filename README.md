@@ -11,17 +11,14 @@ TODO
 
 
 @fgbyte
-    •	Home - revisar distancia entre títulos, textos destacados y contenidos (ver img y comparar con Figma)
-    •	Regístrate  - botón pide más información tiene que estar más separado del texto
 
 
 
 ## Móvil:
 @guillezdev
     •	General - dar un poco más de margen en los laterales me parece que está a 8px, ponerlo a 18px
+    •	General - añadir la X en el menú hamburguesa para cerrar ¿se pude hacer con animación?
 
 
 @fgbyte
-    •	General - añadir la X en el menú hamburguesa para cerrar ¿se pude hacer con animación?
     •	Como funciona - Las ilustraciones tienen una base blanca detrás, igual que en contacto - revisar en los assets de Figma
-    •	Regístrate - el primer botón de"Pide más información" debería estar alineado a la izquierda y más separado
