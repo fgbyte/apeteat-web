@@ -634,6 +634,11 @@ p {
   margin-bottom: 5rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -688,6 +693,10 @@ p {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .block {
@@ -1107,6 +1116,11 @@ p {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pb-10 {
@@ -1533,6 +1547,11 @@ p {
   margin-right: 0.5rem;
 }
 
+.\[\&\>div\]\:mx-5>div {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .\[\&\>div\]\:flex>div {
   display: flex;
 }
@@ -1640,6 +1659,16 @@ p {
 .\[\&\>li\>img\]\:mx-2>li>img {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.\[\&\>li\>img\]\:mx-5>li>img {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.\[\&\>li\>img\]\:mx-3>li>img {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .\[\&\>li\>img\]\:inline>li>img {
