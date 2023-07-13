@@ -639,6 +639,11 @@ p {
   margin-bottom: 5rem;
 }
 
+.mx-\[18px\] {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
