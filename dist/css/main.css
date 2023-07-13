@@ -645,6 +645,10 @@ p {
   margin-top: -1rem;
 }
 
+.-mt-\[2\.375rem\] {
+  margin-top: -2.375rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -659,6 +663,10 @@ p {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-\[0\.8125rem\] {
+  margin-bottom: 0.8125rem;
 }
 
 .ml-2 {
@@ -697,6 +705,10 @@ p {
   margin-top: 2rem;
 }
 
+.mt-\[1\.25rem\] {
+  margin-top: 1.25rem;
+}
+
 .mt-\[40px\] {
   margin-top: 40px;
 }
@@ -707,66 +719,6 @@ p {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.-mb-\[42px\] {
-  margin-bottom: -42px;
-}
-
-.-mb-\[12px\] {
-  margin-bottom: -12px;
-}
-
-.-mt-\[42px\] {
-  margin-top: -42px;
-}
-
-.-mt-\[38px\] {
-  margin-top: -38px;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[13px\] {
-  margin-bottom: 13px;
-}
-
-.mb-\[0\.8125rem\] {
-  margin-bottom: 0.8125rem;
-}
-
-.-mt-\[2\.375rem\] {
-  margin-top: -2.375rem;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[1\.5625rem\] {
-  margin-top: 1.5625rem;
-}
-
-.mt-\[25px\] {
-  margin-top: 25px;
-}
-
-.mt-\[15px\] {
-  margin-top: 15px;
-}
-
-.mt-\[0\.9375rem\] {
-  margin-top: 0.9375rem;
-}
-
-.mt-\[20px\] {
-  margin-top: 20px;
-}
-
-.mt-\[1\.25rem\] {
-  margin-top: 1.25rem;
 }
 
 .block {
@@ -976,14 +928,6 @@ p {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-\[\] {
-  gap: ;
 }
 
 .gap-\[1\.5625rem\] {
@@ -1216,11 +1160,6 @@ p {
   text-align: start;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1369,56 +1308,12 @@ p {
     margin-bottom: 100px;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
+  .lg\:-mt-\[2\.5rem\] {
+    margin-top: -2.5rem;
   }
 
   .lg\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .lg\:mt-\[\] {
-    margin-top: ;
-  }
-
-  .lg\:mt-\[15px\] {
-    margin-top: 15px;
-  }
-
-  .lg\:mt-\[0\.9375rem\] {
-    margin-top: 0.9375rem;
-  }
-
-  .lg\:mt-\[10px\] {
-    margin-top: 10px;
-  }
-
-  .lg\:mt-\[px\] {
-    margin-top: px;
-  }
-
-  .lg\:mt-\[5px\] {
-    margin-top: 5px;
-  }
-
-  .lg\:mt-\[0\.3125rem\] {
-    margin-top: 0.3125rem;
-  }
-
-  .lg\:-mt-0 {
-    margin-top: -0px;
-  }
-
-  .lg\:-mt-\[60px\] {
-    margin-top: -60px;
-  }
-
-  .lg\:-mt-\[40px\] {
-    margin-top: -40px;
-  }
-
-  .lg\:-mt-\[2\.5rem\] {
-    margin-top: -2.5rem;
   }
 
   .lg\:flex {
