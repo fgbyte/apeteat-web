@@ -1207,6 +1207,10 @@ p {
   padding-top: 2rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1489,6 +1493,10 @@ p {
     height: 32rem;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:min-h-screen {
     min-height: 100vh;
   }
@@ -1519,6 +1527,15 @@ p {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:w-\[39rem\] {
+    width: 39rem;
   }
 
   .lg\:min-w-fit {
@@ -1671,6 +1688,10 @@ p {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:pr-12 {
+    padding-right: 3rem;
   }
 
   .lg\:text-center {
