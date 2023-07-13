@@ -16,8 +16,7 @@
 <body>
   <!-- Navbar -->
   <nav class="sticky bg-white z-50 mx-auto inset-x-0 top-0 py-2 font-medium ">
-    <div class="mx-5">
-      <div class="flex gap-2 justify-between items-center mx-auto max-w-[80rem]">
+      <div class="px-5 flex gap-2 justify-between items-center mx-auto max-w-7xl">
         <a href="./">
           <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
         </a>
@@ -56,26 +55,25 @@
           <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
         </div>
       </div>
-    </div>
   </nav>
   <!-- Seccion home -->
   <section class="lg:min-h-screen lg:bg-custom-bg relative bg-cover py-16" id="Home">
-    <div class="relative m-auto flex max-w-7xl">
-      <div class=" relative flex flex-col lg:items-start justify-center  flex-1 gap-3">
-        <h1 class="max-w-[38rem]">
+    <div class="relative m-auto max-w-7xl">
+      <div class="relative flex flex-col lg:items-start justify-center  flex-1 gap-3">
+        <h1 class="mx-5 max-w-[36rem]">
           ¿Pregunta clave para los Buyer Personas?
         </h1>
 
         <img class="relative lg:hidden inset-0" src="./assets/img/companie-desktop-01-1.webp" alt="companie_desktop" />
 
-        <p class="max-w-[38rem]">
+        <p class="mx-5 max-w-[36rem]">
           Ayudamos a <b>miles de empresas de Barcelona y Madrid</b> para
           convertir la hora de la comida en el mejor momento del día. ¿Queréis
           ser una de ellas?
         </p>
 
         <form
-          class="flex flex-col gap-3 max-w-full lg:max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white">
+          class="mx-5 flex flex-col gap-3 max-w-full lg:max-w-[36rem] rounded-lg p-6 bg-black bg-opacity-40 backdrop-filter md:backdrop-blur-[2px] text-white">
           <div class="flex flex-col gap-2" id="numero-de-trabajadores">
             <label class="font-bold">Número de trabajadorxs</label>
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
@@ -507,19 +505,19 @@
     </div>
   </section>
   <!-- Footer -->
-  <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
+  <footer class=" bottom-0 inset-x-0 pt-4 mt-8 lg:mt-20">
     <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
-      <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
+      <div class="flex flex-col gap-16 justify-center items-center md:flex-row">
         <img src="./assets/google_startups.svg" alt="google_startups" />
         <img src="./assets/icon_enisa.ac9e39e.svg" alt="icon_enisa.ac9e39e" />
         <img src="./assets/lanzadera.png" alt="lanzadera" />
       </div>
-      <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row">
+      <div class="flex mt-20 lg:mt-14 flex-wrap flex-col gap-16 justify-center items-center md:flex-row">
         <img src="./assets/kitdigital-logos 4.svg" alt="kitdigital-logos" />
         <img src="./assets/kitdigital-logos 2.svg" alt="kitdigital-logos" />
         <img src="./assets/kitdigital-logos 3.svg" alt="kitdigital-logos" />
       </div>
-      <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2">
+      <div class="max-w-7xl w-full mb-4 mt-20 flex flex-col gap-8 items-center md:flex-row justify-between py-2">
         <a href="./">
           <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="kitdigital-logos" />
         </a>
@@ -528,11 +526,10 @@
           <a><img src="./assets/brand-linkedin.svg" alt="linkedin" /></a>
         </div>
       </div>
-      <div class="h-[3px] w-full rounded-lg bg-slate-300">
-        <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
-          <a href="">Política de Cookies Aviso Legal</a> |
-          <a href="">Política de Privacidad</a>
-        </p>
+      <div class="h-[1px] w-full rounded-lg bg-slate-300">
+        <div class="flex justify-center items-center flex-wrap gap-1 lg:gap-4 text-gray-400 text-center py-6 hover:[&>a]:text-verde">
+          <a href="">Política de Cookies</a> | <a href="">Aviso Legal</a> | <a href="">Política de Privacidad</a>  
+        </div>
       </div>
     </div>
   </footer>

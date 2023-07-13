@@ -695,6 +695,18 @@ p {
   margin-top: auto;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
 .block {
   display: block;
 }
@@ -725,6 +737,10 @@ p {
 
 .h-\[3px\] {
   height: 3px;
+}
+
+.h-\[1px\] {
+  height: 1px;
 }
 
 .max-h-28 {
@@ -910,6 +926,10 @@ p {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-4 {
@@ -1296,6 +1316,16 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1368,6 +1398,18 @@ p {
 
   .lg\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:flex {
@@ -1495,6 +1537,10 @@ p {
     gap: 1.5rem;
   }
 
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
   .lg\:self-start {
     align-self: flex-start;
   }
@@ -1580,6 +1626,11 @@ p {
 }
 
 @media (min-width: 1440px) {
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .xl\:gap-16 {
     gap: 4rem;
   }
