@@ -15,7 +15,47 @@
 
 <body>
     <!-- Navbar -->
-
+    <nav class="sticky bg-white z-50 mx-auto inset-x-0 top-0 py-2 font-medium ">
+        <div class="px-5 flex gap-2 justify-between items-center mx-auto max-w-7xl">
+          <a href="./">
+            <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="logo" />
+          </a>
+          <div class="hidden lg:flex gap-2 lg:gap-12 items-center [&>a]:cursor-pointer hover:[&>a]:text-verde">
+            <a href="./la-empresa.html">La empresa</a>
+            <a href="./como-funciona.html">¿Cómo funciona?</a>
+            <a href="./registrate.html">Regístrate</a>
+            <a href="./contacto.html">Contacto</a>
+            <button class="rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+              93 123 45 67
+            </button>
+            <div class="hover:[&>button]:text-verde active:[&>button]:text-gray-300" name="lenguaje" id="lenguaje">
+              <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+            </div>
+          </div>
+          <!-- Navbar Mobile-->
+          <div class="lg:hidden flex items-center justify-center gap-4">
+            <button class="flex justify-self-end rounded-md bg-verde hover:bg-azulOscuro py-2 px-6 text-white">
+              93 123 45 67
+            </button>
+            <label class="menu-toggle" for="menu-toggle">
+              <input type="checkbox" id="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+        </div>
+        <!-- Menu abierto -->
+        <div id="menu-items" class="hidden lg:hidden relative mt-2 text-center">
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./la-empresa.html">La empresa</a>
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./como-funciona.html">¿Cómo funciona?</a>
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./registrate.html">Regístrate</a>
+          <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="./contacto.html">Contacto</a>
+          <div class="px-4 py-2 hover:[&>button]:text-verde active:[&>button]:text-gray-300">
+            <button>Esp</button> | <button>Cat</button> | <button>Eng</button>
+          </div>
+        </div>
+    </nav>
     <!-- Hero -->
     <section class="lg:mi lg:bg-custom-bg-como-funciona relative bg-cover pt-8 lg:py-[90px]" id="Home">
         <div class="relative m-auto flex max-w-7xl">
@@ -188,35 +228,34 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class=" bottom-0 inset-x-0 pt-4 mt-8">
-        <div class="w-full max-w-[100rem] flex flex-col  mx-auto justify-center items-center px-4">
-            <div class="flex flex-col gap-8 justify-center items-center md:flex-row">
-                <img src="./assets/google_startups.svg" alt="google_startups" />
-                <img src="./assets/icon_enisa.ac9e39e.svg" alt="icon_enisa.ac9e39e" />
-                <img src="./assets/lanzadera.png" alt="lanzadera" />
+    <footer class="bottom-0 inset-x-0 pt-4 mt-8 lg:mt-20">
+        <div class="max-w-[82rem] px-5 lg:px-0 flex flex-col mx-auto justify-center items-center">
+          <div class="flex flex-col gap-16 justify-center items-center md:flex-row">
+            <img src="./assets/google_startups.svg" alt="google_startups" />
+            <img src="./assets/icon_enisa.ac9e39e.svg" alt="icon_enisa.ac9e39e" />
+            <img src="./assets/lanzadera.png" alt="lanzadera" />
+          </div>
+          <div class="flex mt-20 lg:mt-14 flex-wrap flex-col gap-16 justify-center items-center md:flex-row">
+            <img src="./assets/kitdigital-logos 4.svg" alt="kitdigital-logos" />
+            <img src="./assets/kitdigital-logos 2.svg" alt="kitdigital-logos" />
+            <img src="./assets/kitdigital-logos 3.svg" alt="kitdigital-logos" />
+          </div>
+          <div class="w-full max-w-7xl  px-5 mb-4 mt-[95px] flex flex-col gap-8 items-center lg:flex-row justify-between py-2">
+            <a href="./">
+              <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="kitdigital-logos" />
+            </a>
+            <div class="flex justify-center items-center gap-x-5 hover:[&>a]:cursor-pointer">
+              <a><img src="./assets/brand-instagram.svg" alt="instagram" /></a>
+              <a><img src="./assets/brand-linkedin.svg" alt="linkedin" /></a>
             </div>
-            <div class="flex mt-6 flex-wrap flex-col gap-8 justify-center items-center md:flex-row">
-                <img src="./assets/kitdigital-logos 4.svg" alt="kitdigital-logos" />
-                <img src="./assets/kitdigital-logos 2.svg" alt="kitdigital-logos" />
-                <img src="./assets/kitdigital-logos 3.svg" alt="kitdigital-logos" />
+          </div>
+          <div class="h-[1px] w-full rounded-lg bg-slate-300">
+            <div class="flex justify-center items-center flex-wrap gap-1 lg:gap-4 text-gray-400 text-center py-6 hover:[&>a]:text-verde">
+              <a href="">Política de Cookies</a> | <a href="">Aviso Legal</a> | <a href="">Política de Privacidad</a>  
             </div>
-            <div class="max-w-7xl w-full mt-16 flex flex-col gap-8 items-center md:flex-row justify-between py-2">
-                <a href="./">
-                    <img class="h-10" src="./assets/apeteat_logo 1.svg" alt="kitdigital-logos" />
-                </a>
-                <div class="flex justify-center items-center gap-x-4 hover:[&>a]:cursor-pointer">
-                    <a><img src="./assets/brand-instagram.svg" alt="instagram" /></a>
-                    <a><img src="./assets/brand-linkedin.svg" alt="linkedin" /></a>
-                </div>
-            </div>
-            <div class="h-[3px] w-full rounded-lg bg-slate-300">
-                <p class="text-gray-400 text-center py-6 hover:[&>a]:text-verde">
-                    <a href="">Política de Cookies Aviso Legal</a> |
-                    <a href="">Política de Privacidad</a>
-                </p>
-            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
     <!-- Logica del menu de navegacion -->
     <script>
         const menuToggle = document.getElementById("menu-toggle");
