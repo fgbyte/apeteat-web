@@ -1830,12 +1830,29 @@ p {
   margin-right: 0.5rem;
 }
 
+.\[\&\>li\>img\]\:mx-5>li>img {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .\[\&\>li\>img\]\:inline>li>img {
   display: inline;
 }
 
 .\[\&\>li\]\:flex>li {
   display: flex;
+}
+
+.\[\&\>li\]\:gap-1>li {
+  gap: 0.25rem;
+}
+
+.\[\&\>li\]\:gap-3>li {
+  gap: 0.75rem;
+}
+
+.\[\&\>li\]\:gap-2>li {
+  gap: 0.5rem;
 }
 
 .\[\&\>li\]\:text-lg>li {
