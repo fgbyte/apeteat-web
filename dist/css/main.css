@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -1749,6 +1761,18 @@ p {
 
 .\[\&\>li\>img\]\:inline>li>img {
   display: inline;
+}
+
+.\[\&\>li\>img\]\:w-6>li>img {
+  width: 1.5rem;
+}
+
+.\[\&\>li\>img\]\:w-5>li>img {
+  width: 1.25rem;
+}
+
+.\[\&\>li\>img\]\:w-52>li>img {
+  width: 13rem;
 }
 
 .\[\&\>li\]\:flex>li {
