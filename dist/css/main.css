@@ -1767,14 +1767,6 @@ p {
   width: 1.5rem;
 }
 
-.\[\&\>li\>img\]\:w-5>li>img {
-  width: 1.25rem;
-}
-
-.\[\&\>li\>img\]\:w-52>li>img {
-  width: 13rem;
-}
-
 .\[\&\>li\]\:flex>li {
   display: flex;
 }
